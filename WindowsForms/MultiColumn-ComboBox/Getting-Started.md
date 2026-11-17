@@ -9,55 +9,168 @@ documentation: ug
 
 # Getting Started with Windows Forms Multicolumn ComboBox
 
-The Multicolumn ComboBox control provides full support for the Windows Forms designer. To use a Multicolumn ComboBox control in your application, all you need to do is drag-and-drop the Multicolumn ComboBox control from the toolbox onto your form. You can then set any of its properties through the property grid. 
+This section explains how to use the `MultiColumnComboBox` control to create a combo box that displays multiple columns in its drop-down list.
 
-![Windows Forms Multicolumn ComboBox](Overview_images/Overview_img324.jpeg) 
+## Assembly deployment
 
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#multicolumncombobox) section for the list of required assemblies and NuGet package information needed to use the Multicolumn ComboBox control in your application.
 
-The Multicolumn ComboBox can be created programmatically through code as detailed below.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-1. Include the required namespace.
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
-{% capture codesnippet1 %}​
+```
+Install-Package Syncfusion.Tools.Windows
+```
+
+## Adding Multicolumn ComboBox via Designer
+
+1. Create a new Windows Forms project in Visual Studio.
+
+2. Drag the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control from the _Toolbox_ and drop it onto the Windows Form designer. The following dependent assembly is added automatically:
+      
+	* Syncfusion.Tools.Windows
+
+![Windows Forms MultiColumn ComboBox drag and drop from toolbox](Overview_images/Overview_img324.jpeg)
+
+## Adding Multicolumn ComboBox via Code
+
+To add the `MultiColumnComboBox` control programmatically, follow these steps:
+
+1. Create a C# or VB.NET Windows Forms application in Visual Studio.
+
+2. Add the following assembly reference to the project:
+
+    * Syncfusion.Tools.Windows
+
+3. Include the required namespace.
+
 {% tabs %}
 {% highlight c# %}
 
+using System.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
-
 {% highlight vb %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Create an instance of `MultiColumnComboBox`. Add that instance to the Form.
+4. Create an instance of the `MultiColumnComboBox` control and add it to the form.
 
-{% capture codesnippet2 %}​
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
-private Syncfusion.Windows.Forms.Tools.MultiColumnComboBox multiColumnComboBox1;
-this.multiColumnComboBox1=new Syncfusion.Windows.Forms.Tools.MultiColumnComboBox();
-this.Controls.Add(this.multiColumnComboBox1);
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        private MultiColumnComboBox multiColumnComboBox1;
+        public Form1()
+        {
+            InitializeComponent();
+            multiColumnComboBox1 = new MultiColumnComboBox();
+            multiColumnComboBox1.Location = new System.Drawing.Point(20, 20);
+            multiColumnComboBox1.Size = new System.Drawing.Size(200, 25);
+            this.Controls.Add(multiColumnComboBox1);
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private multiColumnComboBox1 As Syncfusion.Windows.Forms.Tools.MultiColumnComboBox
-Me.multiColumnComboBox1 = New Syncfusion.Windows.Forms.Tools.MultiColumnComboBox()
-Me.Controls.Add(Me.multiColumnComboBox1)
+Public Class Form1
+    Inherits Form
+
+    Private multiColumnComboBox1 As MultiColumnComboBox
+    Public Sub New()
+        InitializeComponent()
+        multiColumnComboBox1 = New MultiColumnComboBox()
+        multiColumnComboBox1.Location = New System.Drawing.Point(20, 20)
+        multiColumnComboBox1.Size = New System.Drawing.Size(200, 25)
+        Me.Controls.Add(multiColumnComboBox1)
+    End Sub
+End Class
+
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
+For more data-binding options, refer to [Data binding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding) page.
+
+## Bind data in a simple form
+
+The simple example below binds a `DataTable` to the `MultiColumnComboBox` through a `DataView`, with `FirstName` column in the combo box's text area and `LastName` as the value.
+
+{% capture codesnippet2 %}
+{% tabs %}
+{% highlight c# %}
+
+using System.Data;
+
+private void Form1_Load(object sender, System.EventArgs e)
+{
+    // Create DataTable
+    DataTable dt = new DataTable("Employees");
+
+    dt.Columns.Add("FirstName");
+    dt.Columns.Add("LastName");
+    dt.Columns.Add("City");
+
+    // Add Rows
+    dt.Rows.Add("John", "Tina", "Chennai");
+    dt.Rows.Add("Mary", "Anu", "Coimbatore");
+    dt.Rows.Add("David", "Kumar", "Bangalore");
+    dt.Rows.Add("Peter", "Sam", "Hyderabad");
+
+    // Bind DataSource
+    multiColumnComboBox1.DataSource = new DataView(dt);
+    multiColumnComboBox1.DisplayMember = "FirstName";
+    multiColumnComboBox1.ValueMember = "LastName";
+}
+
+{% endhighlight %}
+{% highlight vb %}
+
+Imports Syncfusion.Windows.Forms.Tools
+
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    ' Step 1: Create a DataTable and add columns
+    Dim dt As New DataTable("Employees")
+
+    dt.Columns.Add("FirstName")
+    dt.Columns.Add("LastName")
+    dt.Columns.Add("City")
+
+    ' Step 2: Add rows to the DataTable
+    dt.Rows.Add(New Object() {"John", "Tina", "Chennai"})
+    dt.Rows.Add(New Object() {"Mary", "Anu", "Coimbatore"})
+    dt.Rows.Add(New Object() {"David", "Kumar", "Bangalore"})
+    dt.Rows.Add(New Object() {"Peter", "Sam", "Hyderabad"})
+
+    ' Step 3: Bind the DataView to MultiColumnComboBox
+    Me.multiColumnComboBox1.DataSource = New DataView(dt)
+    Me.multiColumnComboBox1.DisplayMember = "FirstName"
+    Me.multiColumnComboBox1.ValueMember = "LastName"
+End Sub
 
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-After creating `MultiColumnComboBox`, you can bound them using data source. Refer [DataBinding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding).
+## Output
 
+The output for the above code is shown below.
 
+![Windows Forms MultiColumn ComboBox Getting Started output](Overview_images/Getting-Started.png)
+
+You can also explore our [WinForms MultiColumn ComboBox example](https://github.com/SyncfusionExamples/How-to-display-multiple-members-in-WinForms-MultiColumnComboBox) that shows you how to render and configure the MultiColumn ComboBox.

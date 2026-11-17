@@ -9,22 +9,24 @@ documentation: ug
 
 # How to Customize Display Area in WinForms Calculator
 
-The [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) by default does not allow the use of NumberGroupSeparator like in DoubleTextBox. 
+The [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) by default does not allow the use of `NumberGroupSeparator` like in `DoubleTextBox`.
 
-![Number group](Overview_images/Overview_img129.jpeg) 
+![Calculator without the NumberGroupSeparator](Overview_images/Overview_img129.jpeg)
 
-So to achieve this we need to derive the [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) and override the CreateCalculatorDisplayBox() method.
+To achieve this, we need to derive from the [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) and override the `CreateCalculatorDisplayBox()` method.
 
 {% tabs %}
 {% highlight c# %}
 
 private CalculatorAdv calculatorControl1;
 this.calculatorControl1 = new CalculatorAdv();
+
 public class CalculatorAdv : Syncfusion.Windows.Forms.Tools.CalculatorControl
 {
     public CalculatorAdv()
     {
     }
+
     protected override void CreateCalculatorDisplayBox()
     {
         Syncfusion.Windows.Forms.Tools.DoubleTextBox dtb = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
@@ -38,20 +40,23 @@ public class CalculatorAdv : Syncfusion.Windows.Forms.Tools.CalculatorControl
 {% highlight vb %}
 
 Private calculatorControl1 As CalculatorAdv
-Me.calculatorControl1 = New CalculatorAdv() 
+Me.calculatorControl1 = New CalculatorAdv()
+
 Public Class CalculatorAdv
-Inherits Syncfusion.Windows.Forms.Tools.CalculatorControl
-Public Sub New()
-End Sub
-Protected Overloads Overrides Sub CreateCalculatorDisplayBox()
-Dim dtb As New Syncfusion.Windows.Forms.Tools.DoubleTextBox()
-dtb.NumberGroupSeparator = ","
-Me.textCalculatorBox = dtb
-'Changing the TextBox to DoubleTextBox 
-End Sub
+    Inherits Syncfusion.Windows.Forms.Tools.CalculatorControl
+
+    Public Sub New()
+    End Sub
+
+    Protected Overloads Overrides Sub CreateCalculatorDisplayBox()
+        Dim dtb As New Syncfusion.Windows.Forms.Tools.DoubleTextBox()
+        dtb.NumberGroupSeparator = ","
+        Me.textCalculatorBox = dtb
+        'Changing the TextBox to DoubleTextBox
+    End Sub
 End Class
 
 {% endhighlight %}
 {% endtabs %}
 
-![Number group separator](Overview_images/Overview_img130.jpeg) 
+![Calculator with the NumberGroupSeparator comma applied to the display area](Overview_images/Overview_img130.jpeg) 

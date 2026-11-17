@@ -43,11 +43,11 @@ The child controls can be added to the layout by dragging it from the toolbox to
 
 The `GridLayout` control can be created programmatically using the following steps:
 
-**Step 1**: Create a C# or VB.NET application through Visual Studio.
+**Step 1**: Create a C# or VB.NET application in Visual Studio.
 
 **Step 2**: Add the following required assembly reference to the project: 
 
-	Syncfusion.Shared.Base.dll
+    Syncfusion.Shared.Base.dll
 
 **Step 3**: Include the required namespace.
 
@@ -67,7 +67,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 4**: Create a `GridLayout` control instance, and get the `ContainerControl` as form.
+**Step 4**: Create a `GridLayout` control instance and set the `ContainerControl` to the form.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ Me.gridLayout1.ContainerControl = Me
 
 ### Adding layout components through code
 
-The child controls can be added to the layout by adding them to the form as layout members using the `SetParticipateInLayout` method.
+Child controls can be added to the layout by adding them to the form as layout members using the `SetParticipateInLayout` method.
 
 {% tabs %}
 
@@ -102,44 +102,44 @@ ButtonAdv buttonAdv2 = new ButtonAdv();
 ButtonAdv buttonAdv3 = new ButtonAdv();
 ButtonAdv buttonAdv4 = new ButtonAdv();
 
-this.buttonAdv1.Text = "buttonAdv1";
-this.buttonAdv2.Text = "buttonAdv2";
-this.buttonAdv3.Text = "buttonAdv3";
-this.buttonAdv4.Text = "buttonAdv3";
+buttonAdv1.Text = "buttonAdv1";
+buttonAdv2.Text = "buttonAdv2";
+buttonAdv3.Text = "buttonAdv3";
+buttonAdv4.Text = "buttonAdv4";
 
-this.Controls.Add(this.buttonAdv1);
-this.Controls.Add(this.buttonAdv2);
-this.Controls.Add(this.buttonAdv3);
-this.Controls.Add(this.buttonAdv4);
+this.Controls.Add(buttonAdv1);
+this.Controls.Add(buttonAdv2);
+this.Controls.Add(buttonAdv3);
+this.Controls.Add(buttonAdv4);
 
-this.gridLayout1.SetParticipateInLayout(this.buttonAdv1, true);
-this.gridLayout1.SetParticipateInLayout(this.buttonAdv2, true);
-this.gridLayout1.SetParticipateInLayout(this.buttonAdv3, true);
-this.gridLayout1.SetParticipateInLayout(this.buttonAdv4, true);
+this.gridLayout1.SetParticipateInLayout(buttonAdv1, true);
+this.gridLayout1.SetParticipateInLayout(buttonAdv2, true);
+this.gridLayout1.SetParticipateInLayout(buttonAdv3, true);
+this.gridLayout1.SetParticipateInLayout(buttonAdv4, true);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 Dim buttonAdv1 As ButtonAdv = New ButtonAdv()
-Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
+Dim buttonAdv2 As ButtonAdv = New ButtonAdv()
 Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
 Dim buttonAdv4 As ButtonAdv = New ButtonAdv()
 
-Me.buttonAdv1.Text = "buttonAdv1"
-Me.buttonAdv2.Text = "buttonAdv2"
-Me.buttonAdv3.Text = "buttonAdv3"
-Me.buttonAdv4.Text = "buttonAdv4"
+buttonAdv1.Text = "buttonAdv1"
+buttonAdv2.Text = "buttonAdv2"
+buttonAdv3.Text = "buttonAdv3"
+buttonAdv4.Text = "buttonAdv4"
 
-Me.Controls.Add(this.buttonAdv1)
-Me.Controls.Add(this.buttonAdv2)
-Me.Controls.Add(this.buttonAdv3)
-Me.Controls.Add(this.buttonAdv4)
+Me.Controls.Add(buttonAdv1)
+Me.Controls.Add(buttonAdv2)
+Me.Controls.Add(buttonAdv3)
+Me.Controls.Add(buttonAdv4)
 
-Me.gridLayout1.SetParticipateInLayout(Me.buttonAdv1, true)
-Me.gridLayout1.SetParticipateInLayout(Me.buttonAdv2, true)
-Me.gridLayout1.SetParticipateInLayout(Me.buttonAdv3, true)
-Me.gridLayout1.SetParticipateInLayout(Me.buttonAdv4, true)
+Me.gridLayout1.SetParticipateInLayout(buttonAdv1, True)
+Me.gridLayout1.SetParticipateInLayout(buttonAdv2, True)
+Me.gridLayout1.SetParticipateInLayout(buttonAdv3, True)
+Me.gridLayout1.SetParticipateInLayout(buttonAdv4, True)
 
 {% endhighlight %}
 

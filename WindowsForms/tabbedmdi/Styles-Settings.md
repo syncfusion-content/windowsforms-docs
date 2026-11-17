@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles Settings in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about Styles Settings support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn about the tab style and window style settings in the Syncfusion Windows Forms TabbedMDI control, including 2D, 3D, Office, and Metro themes.
 platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Styles Settings in WinForms TabbedMDI
 
-This section discusses about the Style Settings available in WinForms TabbedMDI control that can be used to create applications that are attractive and appealing to the end-users.
+This section discusses the style settings available in WinForms TabbedMDI that can be used to create applications that are attractive and appealing to the end-users.
 
 ## Tab styles
 
@@ -34,7 +34,7 @@ This option helps to set the 2D theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // 2D
 
@@ -61,7 +61,7 @@ This option helps to set the 3D theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // 3D
 
@@ -87,7 +87,7 @@ This option helps to set the Workbook theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Workbook
 
@@ -113,7 +113,7 @@ This option helps to set the WhidbeyStyle.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // WhidbeyStyle
 
@@ -139,7 +139,7 @@ This option helps to set the DockingWhidbeyStyle.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // DockingWhidbeyStyle
 
@@ -165,7 +165,7 @@ This option helps to set the DockingWhidbeyBetaStyle.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // DockingWhidbeyBetaStyle
 
@@ -191,7 +191,7 @@ This option helps to set the Office2003 theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2003
 
@@ -217,7 +217,7 @@ This option helps to set the Office2007Blue theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2007Blue
 
@@ -245,7 +245,7 @@ This option helps to set the Office2007Black theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2007Black
 
@@ -273,7 +273,7 @@ This option helps to set the Office2007Silver theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2007Silver
 
@@ -301,7 +301,7 @@ This option helps to set the OneNoteStyle theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // OneNoteStyle
 
@@ -327,7 +327,7 @@ This option helps to set the OneNoteStyleFlatTabsStyle.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // OneNoteStyleFlatTabsStyle
 
@@ -353,7 +353,7 @@ This option helps to set the InternetExplorer7 theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // InternetExplorer7
 
@@ -379,7 +379,7 @@ This option helps to set the Metro theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Metro
 
@@ -405,7 +405,7 @@ This option helps to set the Office2016Colorful theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2016Colorful
 
@@ -431,7 +431,7 @@ This option helps to set the Office2016White theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2016White
 
@@ -457,7 +457,7 @@ This option helps to set the Office2016DarkGray theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2016DarkGray
 
@@ -483,7 +483,7 @@ This option helps to set the Office2016Black theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2016Black
 
@@ -507,7 +507,7 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 
 The windows in the TabbedMDI Framework can be arranged in four different styles. To set the styles of the windows, the MDIParent form should be detached from the WinForms TabbedMDI.
 
-N> The DetachFromMdIContainer method is used to detach an MDIParent from the WinForms TabbedMDI.
+>**NOTE**: The DetachFromMdIContainer method is used to detach an MDIParent from the WinForms TabbedMDI.
 
 <table>
 <tr>
@@ -522,7 +522,7 @@ Specifies the style for the windows of the WinForms TabbedMDI Control. The optio
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

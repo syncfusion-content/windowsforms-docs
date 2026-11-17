@@ -17,101 +17,83 @@ The selected card can be displayed using the following property, which simply ta
 
 <table>
 <tr>
-<th>
-WinForms Card Layout Properties</th><th>
-Description</th></tr>
+<th>WinForms Card Layout Properties</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-SelectedCard</td><td>
-Specifies the current card’s name</td></tr>
+<td>SelectedCard</td>
+<td>Specifies the name of the current card.</td>
+</tr>
 </table>
 
 {% tabs %}
-
 {% highlight c# %}
-
 this.cardLayout1.SelectedCard = "Card1";
-
 {% endhighlight %}
-
 {% highlight vb %}
-
 Me.cardLayout1.SelectedCard = "Card1"
-
 {% endhighlight %}
-
 {% endtabs %}
 
-![Change selected card through smart tag in designer](BrowsingThroughCards_images/BrowsingThroughCards_img1.jpg)
+![WinForms CardLayout designer SmartTag used to change the selected card](BrowsingThroughCards_images/BrowsingThroughCards_img1.jpg)
 
 You can also browse through the different cards using the following methods.
 
 <table>
 <tr>
-<th>
-Methods</th><th>
-Description</th></tr>
+<th>Methods</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-First</td><td>
-Shows the first card.</td></tr>
+<td>First</td>
+<td>Shows the first card.</td>
+</tr>
 <tr>
-<td>
-Next</td><td>
-Shows the next card in the list.</td></tr>
+<td>Next</td>
+<td>Shows the next card in the list.</td>
+</tr>
 <tr>
-<td>
-Previous</td><td>
-Shows the previous card in the list.</td></tr>
+<td>Previous</td>
+<td>Shows the previous card in the list.</td>
+</tr>
 <tr>
-<td>
-Last</td><td>
-Shows the last card in the list.</td></tr>
+<td>Last</td>
+<td>Shows the last card in the list.</td>
+</tr>
 </table>
 
-N> The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the WinForms Card Layout.
+>**NOTE**: The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the WinForms Card Layout.
 
 ## Through code
 
-Drag and drop the ComboBox, and the Previous and Next buttons for viewing a selected card. Use the Previous() and Next() methods of the WinForms Card Layout to see it in action inside the Previous and Next Button clicks.
+Drag and drop the ComboBox and the **Previous** and **Next** buttons for viewing a selected card. Use the `Previous()` and `Next()` methods of the WinForms Card Layout in the **Previous** and **Next** button clicks to navigate between the cards.
 
 {% tabs %}
-
 {% highlight c# %}
-
 private void Previous_Click(object sender, System.EventArgs e)
 {
-	this.cardLayout1.Previous();
+    this.cardLayout1.Previous();
 }
 
 private void Next_Click(object sender, System.EventArgs e)
 {
-	this.cardLayout1.Next();
+    this.cardLayout1.Next();
 }
-
 {% endhighlight %}
-
 {% highlight vb %}
-
 Private Sub Previous_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-
-Me.cardLayout1.Previous()
-
+    Me.cardLayout1.Previous()
 End Sub
 
 Private Sub Next_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-
-Me.cardLayout1.Next()
-
+    Me.cardLayout1.Next()
 End Sub
-
 {% endhighlight %}
-
 {% endtabs %}
 
-![Move to the next card from collection of cards in CardLayout](BrowsingThroughCards_images/BrowsingThroughCards_img2.jpeg)
+![WinForms CardLayout moving to the next card from the collection of cards](BrowsingThroughCards_images/BrowsingThroughCards_img2.jpeg)
 
 At run time, cards can be selected using the items in the ComboBox or by button clicks.
 
-![Select the card from the collection of cards thorugh drop-down list](BrowsingThroughCards_images/BrowsingThroughCards_img3.jpeg)
+![WinForms CardLayout selecting a card from the collection of cards through the drop-down list](BrowsingThroughCards_images/BrowsingThroughCards_img3.jpeg)
 

@@ -14,15 +14,15 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 You can find more details about installing the NuGet packages in a Windows Forms application in the following link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 ## Create a simple application with NavigationView
 
-You can create a Windows Forms application with NavigationView control using the following steps:
+You can create a Windows Forms application with the NavigationView control using the following steps:
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the NavigationView control with breadcrumbs nodes.
+Create a new Windows Forms project in Visual Studio to display the NavigationView control with its breadcrumb nodes.
 
 ## Add control via designer
 
@@ -125,7 +125,7 @@ bar4.Text = "Local Disk(E:)"
 ' Adding root Bars
 Me.navigationView1.Bars.AddRange(New Bar[] { bar1 })
 ' Adding child Bars
-bar1.Bars.AddRange(New Bar[] {bar2, bar3, bar4})
+bar1.Bars.AddRange(New Bar() {bar2, bar3, bar4})
 
 ' Set selected Bar 
 Me.navigationView1.SelectedBar = bar1
@@ -136,6 +136,6 @@ Me.navigationView1.SelectedBar = bar1
 
 ## Edit mode
 
-Selected path of navigation view can be changed by editing the text with valid navigation path.
+The selected path of the NavigationView can be changed by editing the text with a valid navigation path.
 
 ![wf navigation path can be edit](Getting-Started_images/wf-navigation-view-control-edit-mode.png)

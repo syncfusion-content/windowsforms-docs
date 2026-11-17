@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Interactive Features in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about Interactive Features support in Syncfusion Windows Forms TabbedMDI control and more details.
+description: Learn about the interactive features of the Syncfusion Windows Forms TabbedMDI control such as tooltips and context menu customization.
 platform: windowsforms
-control: TabbedMDIManager 
+control: TabbedMDIManager
 documentation: ug
 ---
 
 # Interactive Features in WinForms TabbedMDI
 
-This section discusses the Interactive Features of TabControlAdv.
+This section discusses the interactive features of WinForms TabbedMDI, such as tab tooltips and the context menu.
 
 ## Tooltips
 
@@ -27,7 +27,7 @@ Description</th></tr>
 <tr>
 <td>
 GetTooltip</td><td>
-Gets the tooltips for the tabs associated with a form.{{ '_mdiChild_' | markdownify }} - indicates the MDIChild form to which the tooltip should be added.{{ '_tooltip_' | markdownify }} - indicates that the tooltip to be added is of type string.</td></tr>
+Gets the tooltip for the tab associated with a form. <br/> `_mdiChild_` indicates the MDIChild form to which the tooltip should be added. <br/> `_tooltip_` indicates the tooltip text to display.</td></tr>
 <tr>
 <td>
 SetTooltip</td><td>
@@ -36,7 +36,7 @@ Sets the tooltips for the tabs associated with a form.</td></tr>
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -79,7 +79,7 @@ On right-clicking the tabs in the WinForms TabbedMDI layout, a default context m
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Add Namespace
 

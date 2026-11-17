@@ -18,10 +18,10 @@ The following are the ToolStripItems which can be added as menu items to the Win
 
 ## MenuItem
 
-Represents a selectable option displayed on a MenuStrip or WinForms Context Menu Strip. The MenuItem supports all the general properties of a ToolStripItems. 
+Represents a selectable option displayed on a MenuStrip or WinForms Context Menu Strip. The MenuItem supports all the general properties of a ToolStripItem. 
 
->**NOTE** :  
-Please refer the link ["Getting Started"](https://help.syncfusion.com/windowsforms/contextmenustrip/getting-started) section for adding MenuItem to the WinForms Context Menu Strip control.
+>**NOTE**:
+Please refer to the [Getting Started](https://help.syncfusion.com/windowsforms/contextmenustrip/getting-started) section for adding a MenuItem to the WinForms Context Menu Strip control.
 
 The below table will explain the properties of menu item,
 
@@ -37,15 +37,15 @@ Indicates whether the item is in the checked state. This will be displayed only 
 <tr>
 <td>
 Image</td><td>
-Sets the image for the menu item. This image will be displayed only when the ContextMenuStripEx.ShowImageMargin is true and DisplayStyle is Image or ImageAndText.</td></tr>
+Sets the image for the menu item. This image will be displayed only when the <code>ContextMenuStripEx.ShowImageMargin</code> is true and <code>DisplayStyle</code> is <code>Image</code> or <code>ImageAndText</code>.</td></tr>
 <tr>
 <td>
 CheckedState</td><td>
 Specifies the check state of the item. They can be Checked, Unchecked or Indeterminate.</td></tr>
 <tr>
 <td>
-ShowShortcut keys</td><td>
-Indicates whether a shortcut key should be displayed in the menu item. User can access the particular menu item using this shortcut key specified in ShortcutKeys property.</td></tr>
+ShowShortcutKeys</td><td>
+Indicates whether a shortcut key should be displayed in the menu item. The user can access the particular menu item using this shortcut key specified in the ShortcutKeys property.</td></tr>
 <tr>
 <td>
 ShortcutKeys</td><td>
@@ -65,11 +65,11 @@ Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 <tr>
 <td>
 DropDown</td><td>
-Specifies the ToolStripDropDown to be shown when the item is clicked.</td></tr>
+Specifies the <code>ToolStripDropDown</code> control to be shown when the item is clicked. Use this when the child menu is built and managed outside the designer as a separate <code>ToolStripDropDown</code> instance.</td></tr>
 <tr>
 <td>
 DropDownItems</td><td>
-Invokes the Items Collection Editor and lets you add ToolStripItems to be displayed when the item is clicked.</td></tr>
+The collection of child <code>ToolStripItem</code>s to be displayed as a submenu when the item is clicked. Use this when you want to define the submenu inline in the same <code>ContextMenuStripEx</code>.</td></tr>
 </table>
 
 ## TextBox
@@ -78,28 +78,28 @@ The TextBox control is used for editable text. It is used to get input from the 
 
 ### Add a TextBox through designer
 
-1. Once WinForms Context Menu Strip control is added, click **Type Here** for adding the TextBox. On clicking, it will display different type of ToolStripItems, using this user can choose **TextBox** option.
+1. Once the WinForms Context Menu Strip control is added, click **Type Here** for adding the TextBox. On clicking, it will display different types of ToolStripItems; choose the **TextBox** option.
 
-   ![TextBox](ToolStripItems_Images/TextBox.png)
+   ![Type Here dropdown showing the TextBox option](ToolStripItems_Images/TextBox.png)
 
-2. Once item is added, we can set the text by right-click on the particular item in the designer and select **Properties**. Now, in the **Properties** panel, under **Appearance > Text** we can set the text.
+2. Once the item is added, we can set the text by right-clicking on the particular item in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Appearance > Text** we can set the text.
 
-   ![TextBox](ToolStripItems_Images/TextBox1.png)
+   ![Properties panel opened for a ToolStripTextBox](ToolStripItems_Images/TextBox1.png)
 
-   ![TextBox](ToolStripItems_Images/TextBox2.png)
+   ![Setting the Text property of a ToolStripTextBox](ToolStripItems_Images/TextBox2.png)
 
-3. Finally, we have added the TextBox item in WinForms Context Menu Strip control successfully.
+3. Finally, we have added the TextBox item in the WinForms Context Menu Strip control successfully.
 
-   ![TextBox](ToolStripItems_Images/TextBox3.png)
+   ![TextBox item displayed in the Context Menu Strip](ToolStripItems_Images/TextBox3.png)
 
 ### Add a TextBox through code
 
-The below code snippet helps to add the **TextBox** in WinForms Context Menu Strip control.
+The below code snippet adds the **TextBox** in the WinForms Context Menu Strip control.
 
 {% tabs %}
 {% highlight C# %}
 
-//Declaration 
+//Declaration
 private Syncfusion.Windows.Forms.Tools.ContextMenuStripEx contextMenuStripEx;
 private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
 
@@ -109,7 +109,7 @@ this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
 
 //Add a textbox
 this.toolStripTextBox1.Text = "TextBox";
-this.contextMenuStripEx1.Items.Add(this.toolStripTextBox1);
+this.contextMenuStripEx.Items.Add(this.toolStripTextBox1);
 
 {% endhighlight %}
 
@@ -125,12 +125,12 @@ Me.toolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
 
 'Add a textbox
 Me.toolStripTextBox1.Text = "TextBox"
-Me.contextMenuStripEx1.Items.Add(Me.toolStripTextBox1)
+Me.contextMenuStripEx.Items.Add(Me.toolStripTextBox1)
 
 {% endhighlight %}
 {% endtabs %}
 
-![TextBox](ToolStripItems_Images/TextBox3.png)
+![TextBox item displayed in the Context Menu Strip](ToolStripItems_Images/TextBox3.png)
 
 The below table explains the properties of textbox.
 
@@ -183,38 +183,38 @@ Indicates whether the text in the textbox is read-only.</td></tr>
 
 ## ComboBox
 
-A subset of the hosted control's properties and events are exposed at the ToolStripComboBox level, but ComboBox control is fully accessible through the ComboBox property. ToolStripComboBox is optimized for hosting in a ToolStrip.
+A subset of the hosted control's properties and events are exposed at the ToolStripComboBox level, but the hosted ComboBox control is fully accessible through the [`ComboBox`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripcombobox.combobox) property. ToolStripComboBox is optimized for hosting in a ToolStrip.
 
 ### Add a ComboBox through designer
 
-1. Once WinForms Context Menu Strip control is added, click **Type Here** for adding the ComboBox. On clicking, it will display different type of ToolStripItems, in which choose **ComboBox**.
+1. Once the WinForms Context Menu Strip control is added, click **Type Here** for adding the ComboBox. On clicking, it will display different types of ToolStripItems; choose the **ComboBox** option.
 
-   ![ComboBox](ToolStripItems_Images/ComboBox.png)
+   ![Type Here dropdown showing the ComboBox option](ToolStripItems_Images/ComboBox.png)
 
-2. Once item is added, we can set the text by right-clicking on the particular item in the designer and select **Properties**. Now, in the **Properties** panel, under **Appearance > Text** we can set the text.
+2. Once the item is added, we can set the text by right-clicking on the particular item in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Appearance > Text** we can set the text.
 
-   ![Text](ToolStripItems_Images/ComboBox1.png)
+   ![Properties panel opened for a ToolStripComboBox](ToolStripItems_Images/ComboBox1.png)
 
-   ![Text](ToolStripItems_Images/ComboBox2.png)
+   ![Setting the Text property of a ToolStripComboBox](ToolStripItems_Images/ComboBox2.png)
 
-3. Similarly, we can add items collections in **properties** panel, under **Data > Items** by using **String Collection Editor**.
+3. Similarly, we can add items collections in the **Properties** panel, under **Data > Items** by using the **String Collection Editor**.
 
-   ![Items](ToolStripItems_Images/ComboBox3.png)
+   ![String Collection Editor for the ComboBox Items property](ToolStripItems_Images/ComboBox3.png)
 
-   ![Items](ToolStripItems_Images/ComboBox4.png)
+   ![ComboBox items populated through the String Collection Editor](ToolStripItems_Images/ComboBox4.png)
 
-4. Finally, we have add the ComboBox in WinForms Context Menu Strip control successfully.
+4. Finally, we have added the ComboBox in the WinForms Context Menu Strip control successfully.
 
-   ![ComboBox](ToolStripItems_Images/ComboBox5.png)
+   ![ComboBox item displayed in the Context Menu Strip](ToolStripItems_Images/ComboBox5.png)
 
 ### Add a ComboBox through code
 
-The below code snippets helps to add the ComboBox in WinForms Context Menu Strip control.
+The below code snippet adds the ComboBox in the WinForms Context Menu Strip control.
 
 {% tabs %}
 {% highlight C# %}
 
-//Declaration 
+//Declaration
 private Syncfusion.Windows.Forms.Tools.ContextMenuStripEx contextMenuStripEx;
 private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
 
@@ -224,8 +224,8 @@ this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
 
 //Add a combobox
 this.toolStripComboBox1.Text = "ComboBox";
-this.contextMenuStripEx1.Items.Add(this.toolStripComboBox1);
-this.toolStripComboBox1.Items.AddRange(new object[] { "Item1", "Item2", "Item3"});
+this.toolStripComboBox1.Items.AddRange(new object[] { "Item1", "Item2", "Item3" });
+this.contextMenuStripEx.Items.Add(this.toolStripComboBox1);
 
 {% endhighlight %}
 
@@ -241,13 +241,13 @@ Me.toolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
 
 'Add a combobox
 Me.toolStripComboBox1.Text = "ComboBox"
-Me.contextMenuStripEx1.Items.Add(Me.toolStripComboBox1)
-Me.toolStripComboBox1.Items.AddRange(New Object() { "Item1", "Item2", "Item3"})
+Me.toolStripComboBox1.Items.AddRange(New Object() { "Item1", "Item2", "Item3" })
+Me.contextMenuStripEx.Items.Add(Me.toolStripComboBox1)
 
 {% endhighlight %}
 {% endtabs %}
 
-![ComboBox](ToolStripItems_Images/ComboBox5.png)
+![ComboBox item displayed in the Context Menu Strip](ToolStripItems_Images/ComboBox5.png)
 
 The below table explains the properties of combobox.
 
@@ -299,27 +299,29 @@ Represents the source of strings used for autocompletion. The sources can be, Fi
 <tr>
 <td>
 AutoCompleteMode</td><td>
-Indicates text completion behavior of the combo box. The modes are, {{ '_Suggest_' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings, {{ '_Append_' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ '_SuggestAppend_' | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
+Indicates text completion behavior of the combo box. The modes are, <b>Suggest</b> - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings, <b>Append</b> - Appends the remainder of the most likely candidate string to the existing character, highlighting the appended character, and <b>SuggestAppend</b> - Displays the drop down, also appends the highlighted string.</td></tr>
 </table>
 
 ## Separator
 
-Used for separation of items visually in a form. The ToolStripSeparator is automatically spaced.
+Used for separation of items visually in a form. The `ToolStripSeparator` is automatically spaced.
 
 ### Add a Separator through designer
 
-Once WinForms Context Menu Strip control is added, click **Type Here** for adding the Separator. On clicking, it will display different type of ToolStripItems, in which choose Separator.
+1. Once the WinForms Context Menu Strip control is added, click **Type Here** for adding the Separator. On clicking, it will display different types of ToolStripItems, from which choose **Separator**.
 
-   ![Separator](ToolStripItems_Images/Separator.png)
+   ![Separator option in the Type Here dropdown](ToolStripItems_Images/Separator.png)
+
+2. The separator is automatically inserted between the surrounding menu items at design time.
 
 ### Add a Separator through code
 
-The below code snippets adding the Separator in WinForms Context Menu Strip control.
+The below code snippets adds the Separator in the WinForms Context Menu Strip control.
 
 {% tabs %}
 {% highlight C# %}
 
-//Declaration 
+//Declaration
 private Syncfusion.Windows.Forms.Tools.ContextMenuStripEx contextMenuStripEx;
 private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
 private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
@@ -339,17 +341,17 @@ this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
 this.toolStripMenuItem1.Image = System.Drawing.Image.FromFile(@"..\..\..\new.png");
 this.toolStripMenuItem2.Image = System.Drawing.Image.FromFile(@"..\..\..\copy.png");
 this.toolStripMenuItem3.Image = System.Drawing.Image.FromFile(@"..\..\..\cut.png");
-this.toolStripMenuItem3.Image = System.Drawing.Image.FromFile(@"..\..\..\exit.png");
+this.toolStripMenuItem4.Image = System.Drawing.Image.FromFile(@"..\..\..\exit.png");
 this.toolStripMenuItem1.Text = "New";
 this.toolStripMenuItem2.Text = "Copy";
 this.toolStripMenuItem3.Text = "Cut";
-this.toolStripMenuItem3.Text = "Exit";
+this.toolStripMenuItem4.Text = "Exit";
 this.contextMenuStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.toolStripMenuItem1,
-this.toolStripMenuItem2,
-this.toolStripMenuItem3,
-this.toolStripSeparator1,
-this.toolStripMenuItem4});
+    this.toolStripMenuItem1,
+    this.toolStripMenuItem2,
+    this.toolStripMenuItem3,
+    this.toolStripSeparator1,
+    this.toolStripMenuItem4});
 
 {% endhighlight %}
 
@@ -375,19 +377,19 @@ Me.toolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
 Me.toolStripMenuItem1.Image = System.Drawing.Image.FromFile("..\..\..\new.png")
 Me.toolStripMenuItem2.Image = System.Drawing.Image.FromFile("..\..\..\copy.png")
 Me.toolStripMenuItem3.Image = System.Drawing.Image.FromFile("..\..\..\cut.png")
-Me.toolStripMenuItem3.Image = System.Drawing.Image.FromFile("..\..\..\exit.png")
+Me.toolStripMenuItem4.Image = System.Drawing.Image.FromFile("..\..\..\exit.png")
 Me.toolStripMenuItem1.Text = "New"
 Me.toolStripMenuItem2.Text = "Copy"
 Me.toolStripMenuItem3.Text = "Cut"
-Me.toolStripMenuItem3.Text = "Exit"
+Me.toolStripMenuItem4.Text = "Exit"
 Me.contextMenuStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() { Me.toolStripMenuItem1, Me.toolStripMenuItem2, Me.toolStripMenuItem3, Me.toolStripSeparator1, Me.toolStripMenuItem4})
 
 {% endhighlight %}
 {% endtabs %}
 
-Finally, we have added separator in WinForms Context Menu Strip control successfully.
+Finally, we have added a separator in the WinForms Context Menu Strip control successfully.
 
-![Separator](ToolStripItems_Images/Separator1.png)
+![Separator rendered between menu items in the Context Menu Strip](ToolStripItems_Images/Separator1.png)
 
 The below table explains the properties of Separator.
 

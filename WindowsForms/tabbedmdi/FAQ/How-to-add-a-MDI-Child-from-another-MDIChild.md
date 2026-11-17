@@ -13,7 +13,7 @@ You should set the [MDIParent](https://help.syncfusion.com/cr/windowsforms/Syncf
 
 {% tabs %}
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 
 

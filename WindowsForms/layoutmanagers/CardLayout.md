@@ -1,134 +1,118 @@
 ---
 layout: post
 title: CardLayout in Windows Forms Layout Managers Package | Syncfusion®
-description: CardLayout is a layout manager that organizes the controls in stack of cards like appearance. It support different image settings and more.
+description: CardLayout is a layout manager that organizes the controls in a stack of cards. It supports different image settings and more.
 platform: windowsforms
-control: Layout Managers Package
+control: CardLayout
 documentation: ug
 ---
+
 # CardLayout in Windows Forms Layout Manager
 
-`WinForms Card Layout` is a Layout Manager that is applied to a Container, and components are added to the layout in a particular form and not between different forms. It treats each component in the Container as a card. Only one card is visible at a time, and the Container acts as a stack of cards. The first component added to a WinForms Card Layout object is the visible component when the Container is first displayed.
+`WinForms Card Layout` is a layout manager that is applied to a container, and components are added to the layout in a particular form and not between different forms. It treats each component in the container as a card. Only one card is visible at a time, and the container acts as a stack of cards. The first component added to a WinForms Card Layout object is the visible component when the container is first displayed.
 
-The Child component/card can either be made to fill or simply centered within the Container. Some common uses of a WinForms Card Layout are to create WizardControls and property pages.
+The child component or card can either be made to fill or simply centered within the container. Some common uses of a WinForms Card Layout are to create WizardControls and property pages.
 
-N> The WizardControl uses the WinForms Card Layout component internally in it's implementation.
+>**NOTE**: The WizardControl uses the WinForms Card Layout component internally in its implementation.
 
-In it's simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as given below.
+In its simplest form, this layout manager can be used to automatically arrange the child components in one or more rows, as given below.
 
-![CardLayout for Windows Forms](Overview_images/Overview_img23.jpeg)
+![WinForms CardLayout showing a single card displayed inside a container](Overview_images/Overview_img23.jpeg)
 
-N> WinForms Card Layout does not arrange the Child components automatically like the other Layout Managers.
+>**NOTE**: WinForms Card Layout does not arrange the child components automatically like the other layout managers.
 
 ## Key Features
 
-**Card name** - Provides option to set a unique card name for child controls.
+* **Card name**: Provides option to set a unique card name for child controls.
 
-**Card index** - Provides options to get index of the previous or next card.
+* **Card index**: Provides options to get the index of the previous or next card.
 
-**Image** - Provides option to set images for the child controls.
+* **Image**: Provides option to set images for the child controls.
 
-**Layout mode** - Provides options to set layout modes such as default or fill.
+* **Layout mode**: Provides options to set layout modes such as default or fill.
 
-**Getting started**
+## Getting started
 
-This section describes how to add `WinForms Card Layout` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add the `WinForms Card Layout` control in a Windows Forms application and overviews its basic functionalities.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#cardlayout) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#cardlayout) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the control in any application.
 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
- 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+Find more details about installing the NuGet packages in a Windows Forms application in the following link:
 
-**Creating simple application with WinForms Card Layout**
+[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-You can create the Windows Forms application with WinForms Card Layout control as follows:
+## Creating a simple application with WinForms Card Layout
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually using code](#adding-control-manually-using-code)
+You can create a Windows Forms application with the WinForms Card Layout control as follows:
 
-**Creating the project**
+1. [Creating the project](#creating-the-project)
+2. [Adding the control via designer](#adding-control-via-designer)
+3. [Adding the control manually using code](#adding-control-manually-using-code)
 
-Create a new Windows Forms project in the Visual Studio to display the WinForms Card Layout with basic functionalities.
+## Creating the project
+
+Create a new Windows Forms project in Visual Studio to display the WinForms Card Layout with basic functionalities.
 
 ## Adding control via designer
 
-The WinForms Card Layout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The WinForms Card Layout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly reference will be added automatically:
 
 * Syncfusion.Shared.Base.dll
 
-![Drag and drop CardLayout from toolbox](CardLayout_images/CardLayout_img4.png) 
+![WinForms CardLayout being dragged from the Visual Studio toolbox onto the designer](CardLayout_images/CardLayout_img4.png)
 
-To add the form as a Container control of the CardLayout, click `Yes` in a popup form which appears automatically before WinForms Card Layout gets added.
+To add the form as a container control of the CardLayout, click `Yes` in the popup form that appears automatically before the WinForms Card Layout gets added.
 
-![Alert to add CardLayout to form](CardLayout_images/CardLayout_img6.png) 
+![Confirmation dialog asking whether the form should be used as the container control of CardLayout](CardLayout_images/CardLayout_img6.png)
 
-**Adding Layout components through designer**
+### Adding layout components through designer
 
-The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
+The child controls can be added to the layout by dragging them from the toolbox and dropping them in the designer view.
 
-![Adding controls into CardLayout](CardLayout_images/CardLayout_img5.png) 
-
+![Child controls added into the WinForms CardLayout](CardLayout_images/CardLayout_img5.png)
 
 ## Adding control manually using code
 
-To add control manually in C#, follow the given steps:
+To add the control manually in C# or VB, follow the given steps:
 
-**Step 1** - Add the following required assembly references to the project:
+**Step 1**: Add the following required assembly reference to the project:
 
-	* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
-
-{% tabs %}
-
-{% highlight C# %}
-
-using Syncfusion.Windows.Forms.Tools;
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-Imports Syncfusion.Windows.Forms.Tools
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-**Step 3** -  Create `WinForms Card Layout` control instance and set `ContainerControl` as form.
+**Step 2**: Include the namespace **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
+{% highlight c# %}
+using Syncfusion.Windows.Forms.Tools;
+{% endhighlight %}
+{% highlight vb %}
+Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight %}
+{% endtabs %}
 
-{% highlight C# %}
+**Step 3**: Create a `WinForms Card Layout` control instance and set `ContainerControl` as the form.
 
+{% tabs %}
+{% highlight c# %}
 CardLayout cardLayout1 = new CardLayout();
 
 this.cardLayout1.ContainerControl = this;
-
 {% endhighlight %}
-
-{% highlight VB %}
-
+{% highlight vb %}
 Dim cardLayout1 As CardLayout = New CardLayout()
 
 Me.cardLayout1.ContainerControl = Me
-
 {% endhighlight %}
-
 {% endtabs %}
 
-**Adding Layout components through code**
+### Adding layout components through code
 
-The child controls can be added to the layout by simply adding it to the form, since the form is its container control.
+The child controls can be added to the layout by simply adding them to the form, since the form is its container control.
 
 {% tabs %}
-
-{% highlight C# %}
-
+{% highlight c# %}
 ButtonAdv buttonAdv1 = new ButtonAdv();
 ButtonAdv buttonAdv2 = new ButtonAdv();
 ButtonAdv buttonAdv3 = new ButtonAdv();
@@ -140,28 +124,23 @@ this.buttonAdv3.Text = "buttonAdv3";
 this.Controls.Add(this.buttonAdv1);
 this.Controls.Add(this.buttonAdv2);
 this.Controls.Add(this.buttonAdv3);
-
 {% endhighlight %}
-
-{% highlight VB %}
-
+{% highlight vb %}
 Dim buttonAdv1 As ButtonAdv = New ButtonAdv()
-Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
+Dim buttonAdv2 As ButtonAdv = New ButtonAdv()
 Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
 
 Me.buttonAdv1.Text = "buttonAdv1"
 Me.buttonAdv2.Text = "buttonAdv2"
 Me.buttonAdv3.Text = "buttonAdv3"
 
-Me.Controls.Add(this.buttonAdv1)
-Me.Controls.Add(this.buttonAdv2)
-Me.Controls.Add(this.buttonAdv3)
-
+Me.Controls.Add(Me.buttonAdv1)
+Me.Controls.Add(Me.buttonAdv2)
+Me.Controls.Add(Me.buttonAdv3)
 {% endhighlight %}
-
 {% endtabs %}
 
-![Adding child controls to CardLayout](CardLayout_images/CardLayout_img9.png) 
+![Child controls added to the WinForms CardLayout](CardLayout_images/CardLayout_img9.png)
 
 
 ## Configuring WinForms Card Layout
@@ -170,172 +149,134 @@ The configuration settings for the WinForms Card Layout have been discussed in t
 
 ### Card names
 
-By default, when a new Child control is added, the WinForms Card Layout will render a unique card name for it. This name can be modified by using the property given below.
-
+By default, when a new child control is added, the WinForms Card Layout will render a unique card name for it. This name can be modified by using the following property.
 
 <table>
 <tr>
-<th>
-WinForms Card Layout property</th><th>
-Description</th></tr>
+<th>WinForms Card Layout property</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-CardName</td><td>
-Specifies the name of the card.</td></tr>
+<td>CardName</td>
+<td>Specifies the name of the card.</td>
+</tr>
 </table>
 
-
 {% tabs %}
-
-{% highlight C# %}
-
+{% highlight c# %}
 this.cardLayout1.SetCardName(this.label1, "Card1");
-
-
-
 {% endhighlight %}
-
-{% highlight VB %}
-
-
-
+{% highlight vb %}
 Me.cardLayout1.SetCardName(Me.label1, "Card1")
-
-{% endhighlight  %}
-
+{% endhighlight %}
 {% endtabs %}
 
-![Set card name for chid control](Overview_images/Overview_img24.jpeg) 
+![WinForms CardLayout showing a card name set for a child control](Overview_images/Overview_img24.jpeg)
 
 The methods associated with the above property are given below.
 
-
-
 <table>
 <tr>
-<th>
-Method</th><th>
-Description</th></tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-GetCardName</td><td>
-Returns the card name of a Child component.</td></tr>
+<td>GetCardName</td>
+<td>Returns the card name of a child component.</td>
+</tr>
 <tr>
-<td>
-GetCardNames</td><td>
-Returns an array containing the card names as strings.</td></tr>
+<td>GetCardNames</td>
+<td>Returns an array containing the card names as strings.</td>
+</tr>
 <tr>
-<td>
-GetComponentFromName</td><td>
-Returns an associated control given a card name. </td></tr>
+<td>GetComponentFromName</td>
+<td>Returns the associated control for a given card name.</td>
+</tr>
 <tr>
-<td>
-GetNewCardName</td><td>
-Generates a new unique name for the card that could be added to this WinForms Card Layout. </td></tr>
+<td>GetNewCardName</td>
+<td>Generates a new unique name for a card that could be added to this WinForms Card Layout.</td>
+</tr>
 <tr>
-<td>
-SetCardName</td><td>
-Sets the card name for a Child component.</td></tr>
+<td>SetCardName</td>
+<td>Sets the card name for a child component.</td>
+</tr>
 </table>
 
-N> This property is added as an extended property in the properties window of the Child control added to the WinForms Card Layout.
+>**NOTE**: This property is added as an extended property in the properties window of the child control added to the WinForms Card Layout.
 
 ### Card index
 
-The index of the previous and next cards can be determined using the below given properties.
-
-
+The index of the previous and next cards can be determined using the following properties.
 
 <table>
 <tr>
-<th>
-WinForms Card Layout properties</th><th>
-Description</th></tr>
+<th>WinForms Card Layout properties</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-NextCardIndex</td><td>
-Returns the index of the next card that will be shown when the Next() method gets called.</td></tr>
+<td>NextCardIndex</td>
+<td>Returns the index of the next card that will be shown when the `Next()` method is called.</td>
+</tr>
 <tr>
-<td>
-PreviousCardIndex</td><td>
-Returns the index of the previous card that will be shown when the Previous() method gets called.</td></tr>
+<td>PreviousCardIndex</td>
+<td>Returns the index of the previous card that will be shown when the `Previous()` method is called.</td>
+</tr>
 </table>
 
 ### Aspect ratio
 
-The aspect ratio can be set using the property given below.
-
-
+The aspect ratio can be set using the following property.
 
 <table>
 <tr>
-<th>
-WinForms Card Layout property</th><th>
-Description</th></tr>
+<th>WinForms Card Layout property</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-MaintainAspectRatio</td><td>
-Indicates if the aspect ratio is to be maintained. The default value is set to `false`.</td></tr>
+<td>MaintainAspectRatio</td>
+<td>Indicates whether the aspect ratio should be maintained. The default value is set to `false`.</td>
+</tr>
 </table>
 
 {% tabs %}
-
-{% highlight C# %}
-
-
+{% highlight c# %}
 this.cardLayout1.SetMaintainAspectRatio(this.label1, true);
-
-
-
 {% endhighlight %}
-
-{% highlight VB %}
-
-
-
+{% highlight vb %}
 Me.cardLayout1.SetMaintainAspectRatio(Me.label1, True)
-
-{% endhighlight  %}
-
+{% endhighlight %}
 {% endtabs %}
 
 The methods associated with the above property are given below.
 
-
-
 <table>
 <tr>
-<th>
-Method</th><th>
-Description</th></tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-GetMaintainAspectRatio</td><td>
-Returns the value for maintaining aspect ratio based on the control's preferred size.</td></tr>
+<td>GetMaintainAspectRatio</td>
+<td>Returns the value for maintaining aspect ratio based on the control's preferred size.</td>
+</tr>
 <tr>
-<td>
-SetMaintainAspectRatio</td><td>
-Sets the value for maintaining aspect ratio based on the control's preferred size.</td></tr>
+<td>SetMaintainAspectRatio</td>
+<td>Sets the value for maintaining aspect ratio based on the control's preferred size.</td>
+</tr>
 </table>
 
-
-## Configuring Child controls
+## Configuring child controls
 
 Deriving from the Layout Manager base, the WinForms Card Layout inherits all the functionality that the Layout Manager type exposes.
 
-For example, when the WinForms Card Layout is added to a form, and a Panel control is added to it, then this Panel control acts as Card1, where the user can add the needed controls. Then another Panel control can be added which will act as Card2 and so on. During runtime, only one Card will be visible at a time. You can traverse through these cards by adding buttons and setting the appropriate code.
+For example, when the WinForms Card Layout is added to a form, and a panel control is added to it, then this panel control acts as Card1, where the user can add the needed controls. Then another panel control can be added which will act as Card2, and so on. During runtime, only one card will be visible at a time. You can traverse through these cards by adding buttons and setting the appropriate code.
 
-In the following screenshot, Panel control acts as the Container control and Label control acts as a card.
+In the following screenshot, the panel control acts as the container control and the label control acts as a card.
 
-![Adding child controls as card in CardLayout through designer](CardLayout_images/CardLayout_img1.png)
-
+![Child controls added as cards to the WinForms CardLayout through the designer](CardLayout_images/CardLayout_img1.png)
 
 ### Image settings
 
-In the selected card, you can insert an image using the Child (Label) control property as shown below.
-
-
-
+In the selected card, you can insert an image using the child (label) control's `Image` property as shown below.
 
 <table>
 <tr>
@@ -344,43 +285,28 @@ In the selected card, you can insert an image using the Child (Label) control pr
 </tr>
 <tr>
 <td>Image</td>
-<td>Gets/sets the image that will be displayed on the control.</td>
+<td>Gets or sets the image that will be displayed on the control.</td>
 </tr>
 </table>
 
-### Child control property description
-Image - Gets/sets the image that will be displayed on the control.
-
 {% tabs %}
-
-{% highlight C# %}
-
+{% highlight c# %}
 this.label1.Image = ((System.Drawing.Bitmap)(resources.GetObject("label1.Image")));
- 
 {% endhighlight %}
-
-{% highlight VB %}
-
+{% highlight vb %}
 Me.label1.Image = DirectCast((resources.GetObject("label1.Image")), System.Drawing.Bitmap)
-
 {% endhighlight %}
-
 {% endtabs %}
- 
- ![Background with CardLayout](CardLayout_images/CardLayout_img2.png) 
 
+![WinForms CardLayout showing a card with a background image](CardLayout_images/CardLayout_img2.png)
 
 #### Size
 
-The preferred size and minimum size of the Child controls can be set using the PreferredSize and MinimumSize extended properties of the Child controls that are added to the WinForms Card Layout. Refer Child Control Settings to know about this topic.
+The preferred size and minimum size of the child controls can be set using the `PreferredSize` and `MinimumSize` extended properties of the child controls that are added to the WinForms Card Layout. Refer to Child Control Settings to know about this topic.
 
 #### Layout mode
 
-The WinForms Card Layout provides two modes to layout the Child controls. The mode can be set using the property given below.
-
-
-
-
+The WinForms Card Layout provides two modes to lay out the child controls. The mode can be set using the following property.
 
 <table>
 <tr>
@@ -389,173 +315,116 @@ The WinForms Card Layout provides two modes to layout the Child controls. The mo
 </tr>
 <tr>
 <td>LayoutMode</td>
-<td>Specifies the layout mode for the Child controls. The default value is set to 'Default'.</br></br>The options included are as follows.</br></br>Default and</br/>Fill.</td>
+<td>Specifies the layout mode for the child controls. The default value is set to `Default`. The options included are `Default` and `Fill`.</td>
 </tr>
 </table>
 
-When the layout mode of WinForms Card Layout is set to 'Default', the Child control is simply centered within the Container when the Container's size is bigger than the Child control's preferred size. However, if the Container's size is smaller than the Child controls's preferred size, the Child control's size will shrink down to its minimum size. When shrunk, you have an option to specify whether the preferred width/height aspect ratio should be maintained for that Child control, which is specified using the extended MaintainAspectRatio property of each Child.
+When the layout mode of WinForms Card Layout is set to `Default`, the child control is simply centered within the container when the container's size is bigger than the child control's preferred size. However, if the container's size is smaller than the child control's preferred size, the child control's size will shrink down to its minimum size. When shrunk, you have an option to specify whether the preferred width/height aspect ratio should be maintained for that child control, which is specified using the extended `MaintainAspectRatio` property of each child.
 
-When the layout mode is set to 'Fill', it simply resizes the Child control to fill the entire Container client area.
+When the layout mode is set to `Fill`, it simply resizes the child control to fill the entire container client area.
 
 {% tabs %}
-
-{% highlight C# %}
-
+{% highlight c# %}
 this.cardLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.CardLayoutMode.Fill;
- 
 {% endhighlight %}
-
-{% highlight VB %}
-
+{% highlight vb %}
 Me.cardLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.CardLayoutMode.Fill
-
 {% endhighlight %}
-
 {% endtabs %}
 
- 
- ![Card fill the container in CardLayout](CardLayout_images/CardLayout_img3.png) 
+![WinForms CardLayout with the card filling the entire container](CardLayout_images/CardLayout_img3.png)
 
 
 ## Browsing through cards
 
-This section discusses illustrates how to browse through the Cards (Child controls) that have been added to the WinForms Card Layout Manager.
+This section explains how to browse through the cards (child controls) that have been added to the WinForms Card Layout Manager.
 
 ### Through designer
 
-The selected card can be displayed using the property given below, which simply takes the card name as input.
-
-
+The selected card can be displayed using the following property, which simply takes the card name as input.
 
 <table>
 <tr>
-<th>
-WinForms Card Layout property</th><th>
-Description</th></tr>
+<th>WinForms Card Layout property</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-SelectedCard</td><td>
-Gets/sets the current card's name.</td></tr>
+<td>SelectedCard</td>
+<td>Gets or sets the name of the current card.</td>
+</tr>
 </table>
-
 
 {% tabs %}
-
-{% highlight C# %}
-
+{% highlight c# %}
 this.cardLayout1.SelectedCard = "Card1";
-
-
-
 {% endhighlight %}
-
-{% highlight VB %}
-
-
-
+{% highlight vb %}
 Me.cardLayout1.SelectedCard = "Card1"
-
-{% endhighlight  %}
-
+{% endhighlight %}
 {% endtabs %}
 
- ![Change selected card through smart tag in designer](Overview_images/Overview_img29.jpeg) 
+![WinForms CardLayout designer SmartTag used to change the selected card](Overview_images/Overview_img29.jpeg)
 
-
-
-You can also browse through the different cards using the methods given below.
-
-
+You can also browse through the different cards using the following methods.
 
 <table>
 <tr>
-<th>
-Methods</th><th>
-Description</th></tr>
+<th>Methods</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-First</td><td>
-Shows the first card.</td></tr>
+<td>First</td>
+<td>Shows the first card.</td>
+</tr>
 <tr>
-<td>
-Next</td><td>
-Show the next card in the list.</td></tr>
+<td>Next</td>
+<td>Shows the next card in the list.</td>
+</tr>
 <tr>
-<td>
-Previous</td><td>
-Show the previous card in the list.</td></tr>
+<td>Previous</td>
+<td>Shows the previous card in the list.</td>
+</tr>
 <tr>
-<td>
-Last</td><td>
-Show the last card in the list.</td></tr>
+<td>Last</td>
+<td>Shows the last card in the list.</td>
+</tr>
 </table>
 
-N> The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the WinForms Card Layout.
+>**NOTE**: The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the WinForms Card Layout.
 
 ### Through code
 
-Drag and drop the ComboBox and the Previous and Next Buttons for viewing the selected card. Use the Previous() and Next() methods of the WinForms Card Layout to see it in action inside the Previous and Next Button Clicks.
+Drag and drop the ComboBox and the **Previous** and **Next** buttons for viewing the selected card. Use the `Previous()` and `Next()` methods of the WinForms Card Layout in the **Previous** and **Next** button clicks to navigate between the cards.
 
 {% tabs %}
-
-{% highlight C# %}
-
+{% highlight c# %}
 private void Previous_Click(object sender, System.EventArgs e)
-
 {
-
-this.cardLayout1.Previous();
-
+    this.cardLayout1.Previous();
 }
-
-
 
 private void Next_Click(object sender, System.EventArgs e)
-
 {
-
-this.cardLayout1.Next();
-
+    this.cardLayout1.Next();
 }
-
-
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-
-
+{% endhighlight %}
+{% highlight vb %}
 Private Sub Previous_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-
-Me.cardLayout1.Previous()
-
+    Me.cardLayout1.Previous()
 End Sub
-
-
 
 Private Sub Next_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-
-Me.cardLayout1.Next()
-
+    Me.cardLayout1.Next()
 End Sub
-
-{% endhighlight  %}
-
+{% endhighlight %}
 {% endtabs %}
 
-![Move to next card from collection of cards in CardLayout](Overview_images/Overview_img31.jpeg)
+![WinForms CardLayout moving to the next card from the collection of cards](Overview_images/Overview_img31.jpeg)
 
+At run time, cards can be selected using the items in the ComboBox or by button clicks.
 
-
-At run time, cards can be selected using the items in the ComboBox or by Button clicks.
-
-![Select the card from the collection of cards thorugh drop down list](Overview_images/Overview_img32.jpeg)
-
-
+![WinForms CardLayout selecting a card from the collection of cards through the drop-down list](Overview_images/Overview_img32.jpeg)
 
 {% seealso %}
-
-[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout), [Configuring CardLayout](#configuring-cardlayout), [Configuring Child Controls](#configuring-child-controls), and [Child Control Settings.](/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings)
-
+[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout), [Configuring CardLayout](#configuring-cardlayout), [Configuring Child Controls](#configuring-child-controls), and [Child Control Settings](/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings).
 {% endseealso %}

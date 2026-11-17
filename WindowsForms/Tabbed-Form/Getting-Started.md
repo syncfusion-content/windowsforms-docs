@@ -17,9 +17,9 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 The default form can be changed into `SfTabbedForm` by following the given steps:
 
-1. Create a new Windows Forms application in Visual Studio and refer to the `Syncfusion.Tools.WinForms` assembly.
+1. Create a new Windows Forms application in Visual Studio and refer to the `Syncfusion.Tools.Windows` assembly.
 
-2. Include the following namespaces to the directives list.
+2. Include the following namespaces in the directives list.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -106,7 +106,7 @@ Me.TabbedFormControl = tabbedFormControl
 {% endtabs %}
 
 
-![Winforms showing the added tabs in tabbed form](Getting-Started_images/Getting-Started_img1.png)
+![WinForms TabbedForm showing two tabs added via the TabbedFormControl](Getting-Started_images/Getting-Started_img1.png)
 
 ## Show tabs below the title bar
 
@@ -123,4 +123,3 @@ Me.ExtendTabsToTitleBar = False
 
 
 ![WinForms showing the tabs below the title bar in tabbed form](Getting-Started_images/Getting-Started_img2.png)
-

@@ -17,4 +17,4 @@ The [WinForms CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusi
 
 * **Culture formatting** - Ensures that the formatting of display is culture sensitive.
 
-* **Theme** - Supports different types of themes to provide the look and feel for the grid.
+* **Theme** - Supports different types of themes to provide the look and feel for the control.

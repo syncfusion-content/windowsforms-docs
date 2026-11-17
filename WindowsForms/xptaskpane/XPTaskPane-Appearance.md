@@ -9,8 +9,6 @@ documentation: ug
 
 # Appearance in Windows Forms XPTaskPane
 
-This section comprises the below topics:
-
 ## Foreground settings
 
 ### XPTaskPane foreground
@@ -75,16 +73,16 @@ Me.xpTaskPane1.HeaderLabel.ForeColor = System.Drawing.Color.Navy
 
 ## Visual styles
 
-The Visual appearance of XP Task Pane can be defined by the [XPTaskPane.VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_VisualStyle) property. It supports _OfficeXP_ and new _Office2007_ styles which provides you a more polished user interface.
+The visual appearance of the XPTaskPane can be defined by the [XPTaskPane.VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_VisualStyle) property. It supports _OfficeXP_ and _Office2007_ styles, which provide a more polished user interface.
+
+The following code example sets the Office2007 style:
 
 {% tabs %}
 
 {% highlight C# %}
 
 
-this.xpTaskPane1.VisualStyle = VisualStyle.Office2007;
-
-this.xpTaskPane1.VisualStyle = VisualStyle.OfficeXP;
+this.xpTaskPane1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
 {% endhighlight %}
 
@@ -92,9 +90,28 @@ this.xpTaskPane1.VisualStyle = VisualStyle.OfficeXP;
 
 
 
-Me.xpTaskPane1.VisualStyle = VisualStyle.Office2007
+Me.xpTaskPane1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
-Me.xpTaskPane1.VisualStyle = VisualStyle.OfficeXP
+{% endhighlight %}
+
+{% endtabs %}
+
+To set the OfficeXP style, use the following code:
+
+{% tabs %}
+
+{% highlight C# %}
+
+
+this.xpTaskPane1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.OfficeXP;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+
+
+Me.xpTaskPane1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
 
 {% endhighlight %}
 
@@ -102,11 +119,9 @@ Me.xpTaskPane1.VisualStyle = VisualStyle.OfficeXP
 
 ![Appearance customization](XPTaskPane-Appearance_images/XPTaskPane-Appearance_img3.jpeg)
 
-
-
 ### Office color schemes
 
-XPTaskPane supports all the three office color schemes.
+XPTaskPane supports all three Office color schemes.
 
 {% tabs %}
 
@@ -154,7 +169,7 @@ Me.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.
 
 ### Custom colors
 
-We can also apply custom colors to the XPTaskPane by setting [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_Office2007ColorScheme) to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
+We can also apply custom colors to the XPTaskPane by setting [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_Office2007ColorScheme) to "Managed" and specifying the custom color through the `ApplyManagedColors` method as follows.
 
 {% tabs %}
 

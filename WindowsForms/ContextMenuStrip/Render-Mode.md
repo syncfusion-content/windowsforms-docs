@@ -9,7 +9,7 @@ documentation: ug
 
 # Render Mode in WinForms Context Menu Strip
 
-Render mode is used to customize the appearance of the WinForms Context Menu Strip either through predefined or custom standards. It also refers to what kind of visual style the ToolStripItems needs to use. The [`RenderMode`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.rendermode?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_RenderMode) property is used to provides different painting styles like:
+Render mode is used to customize the appearance of the WinForms Context Menu Strip either through predefined or custom standards. It also refers to what kind of visual style the ToolStripItems use. The [`RenderMode`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.rendermode?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_RenderMode) property provides different painting styles like:
 
 * Professional
 * System
@@ -61,6 +61,8 @@ Me.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Sys
 
 ## ManagerRenderMode
 
+`ManagerRenderMode` uses the renderer supplied by the `ToolStripManager`, which itself depends on the currently selected visual style (for example, the OS theme or a Syncfusion skin). Use this option to honor the application's visual style automatically.
+
 The below code snippet is used to apply "ManagerRenderMode" style renderer.
 
 {% tabs %}
@@ -82,7 +84,7 @@ Me.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Man
 
 ## Custom
 
-The RenderMode property cannot be directly set to **Custom** enumeration. To use a custom ToolStripRenderer, set the [`Renderer`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.renderer?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_Renderer) property directly instead. Here we have set the [`Renderer`]((https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.renderer?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_Renderer)) property to Office12ToolStripRenderer or Office2016ToolStripRenderer class object, which is used to change the appearance of the WinForms Context Menu Strip control.
+The `RenderMode` property cannot be directly set to the **Custom** enumeration. To use a custom `ToolStripRenderer`, set the [`Renderer`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.renderer?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_Renderer) property directly instead. Below we set the `Renderer` property to an `Office12ToolStripRenderer` or `Office2016ToolStripRenderer` class object, which is used to change the appearance of the WinForms Context Menu Strip control.
 
 In the form load event, add one of the below code to change the appearance.
 
@@ -98,6 +100,9 @@ this.contextMenuStripEx1.Renderer = new Office12ToolStripRenderer(new OfficeBlue
 //Sets Office Silver Color
 this.contextMenuStripEx1.Renderer = new Office12ToolStripRenderer(new Office12ColorTable());
 
+//Sets Office2016 Colorful (using Office2016ToolStripRenderer)
+this.contextMenuStripEx1.Renderer = new Office2016ToolStripRenderer();
+
 {% endhighlight %}
 
 {% highlight vb %}
@@ -111,8 +116,13 @@ Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New OfficeBlue)
 'Sets Office Silver Color
 Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New Office12ColorTable())
 
+'Sets Office2016 Colorful (using Office2016ToolStripRenderer)
+Me.contextMenuStripEx1.Renderer = New Office2016ToolStripRenderer()
+
 {% endhighlight %}
 {% endtabs %}
+
+> **NOTE**: The `Office*` renderer classes live in the `Syncfusion.Windows.Forms` / `Syncfusion.Tools.Windows` namespaces. Add the appropriate `using` / `Imports` directive (for example, `using Syncfusion.Windows.Forms;`) at the top of the code file.
 
 ![Custom](RenderMode_Images/OfficeBlack.png) 
 

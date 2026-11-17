@@ -14,4 +14,3 @@ NavigationView aligns the embedded child controls and images from right to left 
 ![Right to left support](Right-To-Left-Support_images/Right-To-Left-Support_img1.jpeg)
 
 
-

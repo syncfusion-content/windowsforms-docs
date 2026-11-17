@@ -1,9 +1,9 @@
 ---
 layout: post
 title: How to Add Different Icons to MDI Tabs in TabbedMDI | Syncfusion®
-description: Learn how to add different icons to MDI tabs in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn how to add different icons to MDI tabs in the Syncfusion Windows Forms TabbedMDI control by deriving a custom TabbedMDIManager.
 platform: windowsforms
-control: TabbedMDIPackage
+control: TabbedMDIManager
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ This can be done programmatically using the below code snippet.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -32,6 +32,8 @@ TabControlAdv tabcontrol = this.tabbedMdiManager.GetMdiTabPanel() as TabControlA
 tabcontrol.ImageList = this.imageList1;
 
 // Assign the images to the child tabs.
+
+int index = 0;
 
 foreach (TabPageAdv page in tabcontrol.TabPages)
 

@@ -9,10 +9,10 @@ documentation: ug
 
 # Localization in Windows Forms PopupMenu
 
-Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, en-US is the culture for English spoken in United States; en-GB is the culture for English spoken in Great Britain.
+Localization is the process of making an application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, en-US is the culture for English spoken in the United States; en-GB is the culture for English spoken in Great Britain.
 
 
-The below code snippet will explain how to set the localize text in **German** culture.
+The below code snippet will explain how to set the localized text for the **German** culture.
 
 {% tabs %}
 {% highlight c# %}

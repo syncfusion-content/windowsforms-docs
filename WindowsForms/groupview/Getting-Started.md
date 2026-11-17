@@ -8,17 +8,17 @@ documentation: ug
 ---
 # Getting Started with Windows Forms GroupView
 
-This section describes how to add [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control in a Windows Forms application and gives an overview of its basic functionalities.
 
 ## Assembly deployment
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#groupview) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
 ## Adding GroupView control via designer
 
-1. Create a new Windows Forms project in the Visual Studio.
+1. Create a new Windows Forms project in Visual Studio.
 
 2. Add the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control to an application by dragging it from the toolbox to a designer view. The following dependent assembly will be added automatically:
 
@@ -26,7 +26,7 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/
 
 ![Windows Forms GroupView drag and drop from toolbox](Overview_images/GroupView_img1.png)
 
-3. Right-click the control, click **Properties**, and then select [GroupViewItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_GroupViewItems). Now, the **GroupViewItem Collection Editor** will be opened. Click **Add** to add group view items to the control.
+3. Right-click the control, click **Properties**, and then select [GroupViewItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_GroupViewItems). Now, the **GroupViewItem Collection Editor** will be opened. Click **Add** to add group view items to the control. In the editor, you can set the text, image, and other properties of each item under the appropriate categories.
 
 ![Windows Forms GroupView showing collection editor of item](GettingStarted_images/GroupView_collectioneditor.png)
 
@@ -95,8 +95,8 @@ Me.Controls.Add(groupView1)
 
 this.groupView1.GroupViewItems.AddRange(new GroupViewItem[] {
             new GroupViewItem("GroupViewItem0",0,true, null, "GroupViewItem0"),
-            new GroupViewItem("GroupViewItem1",1,true, null, "GroupViewItem0"),
-            new GroupViewItem("GroupViewItem2",2,true, null, "GroupViewItem0")});
+            new GroupViewItem("GroupViewItem1",1,true, null, "GroupViewItem1"),
+            new GroupViewItem("GroupViewItem2",2,true, null, "GroupViewItem2")});
 this.groupView1.FlatLook = true;
 
 {% endhighlight %}
@@ -105,8 +105,8 @@ this.groupView1.FlatLook = true;
 
 Me.groupView1.GroupViewItems.AddRange(New GroupViewItem() { 
             New GroupViewItem("GroupViewItem0",0,True, Nothing, "GroupViewItem0"), 
-            New GroupViewItem("GroupViewItem1",1,True, Nothing, "GroupViewItem0"), 
-            New GroupViewItem("GroupViewItem2",2,True, Nothing, "GroupViewItem0"True, Nothing, "GroupViewItem0")})
+            New GroupViewItem("GroupViewItem1",1,True, Nothing, "GroupViewItem1"), 
+            New GroupViewItem("GroupViewItem2",2,True, Nothing, "GroupViewItem2")})
 Me.groupView1.FlatLook = True
 
 {% endhighlight %}
@@ -126,18 +126,18 @@ To add images to the GroupView, ImageList control must be added to the form with
 
 ImageList imageList1 = new ImageList();
 imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-this.imageList1.Images.SetKeyName(0, "holo.png");
-this.imageList1.Images.SetKeyName(1, "edge.png");
-this.imageList1.Images.SetKeyName(2, "light.png");
+imageList1.Images.SetKeyName(0, "holo.png");
+imageList1.Images.SetKeyName(1, "edge.png");
+imageList1.Images.SetKeyName(2, "light.png");
 
 {% endhighlight %}
 {% highlight VB %}
 
 Dim imageList1 As New ImageList()
 imageList1.ImageStream = (CType(resources.GetObject("imageList1.ImageStream"), System.Windows.Forms.ImageListStreamer))
-Me.imageList1.Images.SetKeyName(0, "holo.png")
-Me.imageList1.Images.SetKeyName(1, "edge.png")
-Me.imageList1.Images.SetKeyName(2, "light.png")
+imageList1.Images.SetKeyName(0, "holo.png")
+imageList1.Images.SetKeyName(1, "edge.png")
+imageList1.Images.SetKeyName(2, "light.png")
 
 {% endhighlight %}
 {% endtabs %}
@@ -147,13 +147,13 @@ After adding images, assign **ImageList** to the [SmallImageList](https://help.s
 {% tabs %}
 {% highlight C# %}
 
-groupView1.SmallImageList = this.imageList1;
+groupView1.SmallImageList = imageList1;
 groupView1.SmallImageView = true;
 
 {% endhighlight %}
 {% highlight VB %}
 
-groupView1.SmallImageList = Me.imageList1
+groupView1.SmallImageList = imageList1
 groupView1.SmallImageView = True
 
 {% endhighlight %}

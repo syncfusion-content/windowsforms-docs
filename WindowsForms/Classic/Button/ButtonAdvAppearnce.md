@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in Windows Forms ButtonAdv(Classic)
 
-This section will walk you through the below topics which discusses the properties that controls the appearance of the ButtonAdv.
+This section walks through the properties that control the appearance of `ButtonAdv`.
 
 ## Button Types
 
@@ -121,11 +121,11 @@ Me.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Su
 
 [Button Types](https://help.syncfusion.com/windowsforms/classic/button/buttonadvappearnce)
 
- {% endseealso %}
+{% endseealso %}
 
 ## Visual Styles
 
-Visual Styles for the ButtonAdv control can be enabled by using the UseVisualStyle property. The different visual style are specified through Appearance.
+Visual styles for the `ButtonAdv` control can be enabled by using the `UseVisualStyle` property. Different visual styles are specified through the `Appearance` property.
 
 <table>
 <tr>
@@ -139,7 +139,7 @@ Sets the visual styles for the control when UseVisualStyle property is true. The
 <tr>
 <td>
 <br>UseVisualStyle</td><td>
-Indicates whether Visual Styles must be enabled for the button. Set value to True when you want to apply settings of the properties: Appearance, BorderStyleAdv, ButtonType and etc. on current button.</td></tr>
+Indicates whether visual styles are enabled for the button. Set this value to `true` when you want to apply the settings of properties such as `Appearance`, `BorderStyleAdv`, and `ButtonType` to the current button.</td></tr>
 <tr>
 <td>
 MetroColor</td><td>
@@ -196,7 +196,7 @@ Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 
 ## Foreground Settings
 
-Text for the ButtonAdv can be customized using the below properties.
+The text for `ButtonAdv` can be customized using the following properties.
 
 <table>
 <tr>

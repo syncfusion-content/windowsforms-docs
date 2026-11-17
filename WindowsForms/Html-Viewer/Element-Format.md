@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Element Format in Windows Forms HTMLUI | Syncfusion®
-description: Learn about Element Format support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about formatting individual HTML elements rendered by the WinForms HTML Viewer control, including alignment, color, and text styling.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -16,7 +16,7 @@ The following snippet shows how a text content can be replaced with an image in 
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

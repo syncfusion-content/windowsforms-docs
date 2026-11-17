@@ -9,25 +9,25 @@ documentation: ug
 
 # Getting Started with Windows Forms CommandBar
 
-This section provides a quick overview to work with the command bar control in WinForms.
+This section provides a quick overview to work with the CommandBar control in WinForms.
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
-This section describes how to add [CommandBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add the [CommandBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) control in a Windows Forms application and gives an overview of its basic functionalities.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#commandbarcontroller) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. Please find more details regarding [installation of nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) in windows form application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#commandbarcontroller) section to get the list of assemblies or the NuGet package that needs to be added as a reference to use the control in any application. Please find more details regarding [installation of NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) in the Windows Forms application.
 
-## Creating application with command bar
+## Creating an application with CommandBar
 
-You can create the Windows Forms application with CommandBar control as follows:
+You can create the Windows Forms application with the CommandBar control as follows:
 
-1. [Adding command bar via designer](#adding-command-bar-via-designer)
-2. [Adding command bar via code](#adding-command-bar-via-code)
+1. [Adding CommandBar via designer](#adding-commandbar-via-designer)
+2. [Adding CommandBar via code](#adding-commandbar-via-code)
 
-### Adding control via designer
+### Adding CommandBar via designer
 
 The [CommandBarController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html) can be added to the application by dragging it from the toolbox and dropping it to the designer view. The following required assembly references will be added automatically.
 
@@ -38,7 +38,7 @@ The [CommandBarController](https://help.syncfusion.com/cr/windowsforms/Syncfusio
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 * Syncfusion.Licensing.dll
-* Syncfusion.SpellChecked.Base.dll
+* Syncfusion.SpellChecker.Base.dll
 
 ![Command bar controller selected in toolbox](Getting-Started_images/commandBarController_ToolBox_Selection.png)
 
@@ -50,22 +50,22 @@ Command bar can be added to the command bar controller by selecting the `Add Com
 
 ![Form with CommandBar in designer](Getting-Started_images/form_with_CommandBar_in_Designer.png)
 
-### Adding control via code
+### Adding CommandBar via code
 
-To add command bar in C#, follow the given steps:
+To add the CommandBar in C#, follow the given steps:
 
 **Step 1** - Add the following required assembly references to the project:
 
-        * Syncfusion.Grid.Base.dll
-        * Syncfusion.Grid.Windows.dll
-        * Syncfusion.Shared.Base.dll
-        * Syncfusion.Shared.Windows.dll
-        * Syncfusion.Tools.Base.dll
-        * Syncfusion.Tools.Windows.dll
-        * Syncfusion.Licensing.dll
-        * Syncfusion.SpellChecked.Base.dll
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+* Syncfusion.Licensing.dll
+* Syncfusion.SpellChecker.Base.dll
 
-**Step 2** - Include the namespace **Syncfusion.Windows.Forms.Tools**
+**Step 2** - Include the namespace **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 {% highlight C# %}
@@ -107,7 +107,7 @@ Me.commandBarController1.HostForm = Me;
 
 #### **Adding command bar**
 
-Create an instance of [CommandBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) and add it to the [CommandBars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html#Syncfusion_Windows_Forms_Tools_CommandBarController_CommandBars) collection property of commandbar controller instance. The below code shows a command bar is being added to the commandbar controller.
+Create an instance of [CommandBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) and add it to the [CommandBars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html#Syncfusion_Windows_Forms_Tools_CommandBarController_CommandBars) collection property of the CommandBarController instance. The below code shows a command bar being added to the CommandBarController.
 
 {% tabs %}
 
@@ -139,11 +139,11 @@ N> You can find the detailed description of various themes applicable to command
 
 ## Child controls
 
-Command bar acts as a container control to host the required control in the tool bar. In this topic the child controls hosted via command bar is discussed.
+The command bar acts as a container control to host the required controls in the toolbar. In this topic, the child controls hosted via the command bar are discussed.
 
-## Adding single control
+## Adding a single control
 
-The controls with single-line visual structure like combo box, text box and button can be added directly to the command bar instance. This can be done via adding the required control via the `Controls` property of the command bar. In the below code snippet a text box control with key properties defined is being added to the command bar.
+Controls with a single-line visual structure like combo box, text box, and button can be added directly to the command bar instance. This can be done by adding the required control via the `Controls` property of the command bar. In the below code snippet, a text box control is added to the command bar.
 
 {% tabs %}
 
@@ -165,7 +165,7 @@ Me.commandBar1.Controls.Add(Me.textBox1)
 
 ## Adding multiple controls
 
-In order to host more than one control with better alignment and avoid overlapping, a container control like `Panel` can be used. In the below code snippet, a combo box is added along with a label control.
+In order to host more than one control with better alignment and to avoid overlapping, a container control like `Panel` can be used. In the below code snippet, a combo box is added along with a label control.
 
 {% tabs %}
 

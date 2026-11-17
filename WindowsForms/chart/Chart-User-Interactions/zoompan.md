@@ -301,21 +301,6 @@ chartControl.ShowScrollBars = False
 
 ![Zoom Show Scroll Bars in Windows Forms Chart](../Chart-User-Interactions_Images/zoom_selection_2.png)
 
-## Scroll precision
-
-The [ScrollPrecision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ScrollPrecision) property specifies the movement precision of the horizontal and vertical scroll bars displayed after zooming. The default value is `100`.
-
-The following code example demonstrates how to set the scroll precision.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.ScrollPrecision = 20;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.ScrollPrecision = 20
-{% endhighlight %}
-{% endtabs %}
-
 ## Enable panning
 
 The [MouseAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_MouseAction) property specifies the action performed when users drag the mouse over the chart. The default value is [Zooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartMouseAction.html#Syncfusion_Windows_Forms_Chart_ChartMouseAction_Zooming).

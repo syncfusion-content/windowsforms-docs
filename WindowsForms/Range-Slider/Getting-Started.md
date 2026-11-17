@@ -11,9 +11,9 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#rangeslider) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#rangeslider) section to get the list of assemblies or details of the NuGet package that needs to be added as reference to use the control in any application.
 
-Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in Windows Forms application.
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
 ## Add RangeSlider control via designer
 
@@ -118,17 +118,17 @@ rangeSlider1.SliderMax = 7
 
 ## Horizontal and vertical orientations
 
-You can change the layout of range slider to horizontal or vertical by setting the [orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_Orientation) property of RangeSlider.
+You can change the layout of the RangeSlider to horizontal or vertical by setting the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_Orientation) property of the RangeSlider.
 
 {% tabs %}
 {% highlight C# %}
 
-rangeSlider.Orientation=Orientation.Vertical;
+rangeSlider1.Orientation = Orientation.Vertical;
 
 {% endhighlight %}
 {% highlight VB %}
 
-rangeSlider.Orientation=Orientation.Vertical
+rangeSlider1.Orientation = Orientation.Vertical
 
 {% endhighlight %}
 {% endtabs %}
@@ -139,4 +139,4 @@ rangeSlider.Orientation=Orientation.Vertical
 
 **Vertical**
 
-![wf range slider control horizontal orientation](Getting-Started_images/wf-range-slider-vertical-orientation.png) 
+![wf range slider control vertical orientation](Getting-Started_images/wf-range-slider-vertical-orientation.png) 

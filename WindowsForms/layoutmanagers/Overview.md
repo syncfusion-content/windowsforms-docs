@@ -14,11 +14,11 @@ The Layout Manager is the base type of all components, providing a basic layout 
 
 ## BorderLayout
 
-This Layout Manager will layout the Child controls along the borders and at the center, just like the .NET framework's built-in docking support.
+This Layout Manager will layout the Child controls along the borders and at the center, just like the .NET Framework's built-in docking support.
 
 ## CardLayout
 
-This Layout Manager shows one Child control at a time in a Container.
+This Layout Manager shows one Child control at a time in a container.
 
 ## FlowLayout
 
@@ -38,7 +38,7 @@ This Layout Manager will layout the Child controls in a virtual grid of rows and
 
 Container control is a control on which the Layout Manager is dropped or for which the layout is designed. All controls that inherit the System.Windows.Forms.ContainerControl can act as a Container control.
 
-Windows Form and Panel controls are the most widely used Container controls.
+The Windows Form and Panel controls are the most widely used Container controls.
 
 ## Child control
 
@@ -46,7 +46,7 @@ Child controls can be added to the Container control by just dragging and droppi
 
 The Layout Managers can be associated with any Container control property. The Layout Managers will then automatically layout their Child controls based on specific constraints. They can also be used to layout the non-control-based components that are derived from a specific interface (LayoutItemBase) drawn within the Container.
 
-N> The Container control will be referred by its property name as ContainerControl and it's children referred to as Child components (emphasizing the fact that the children need not be a control-derived class) in this document.
+N> The Container control will be referred by its property name as ContainerControl and its children referred to as Child components (emphasizing the fact that the children need not be a control-derived class) in this document.
 
 {% seealso %}
 

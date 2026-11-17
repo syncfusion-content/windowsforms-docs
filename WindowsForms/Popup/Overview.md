@@ -9,15 +9,15 @@ documentation: ug
 
 # About Syncfusion® Windows Forms PopupControlContainer Control
 
-A PopupControlContainer is a panel-derived control that allows end-users to populate it with child controls and finally associate the same with a parent control. By default, it’s hidden, and it can be brought into existence when performing events like mouse-down, mouse-up, etc… over the parent control. 
+The PopupControlContainer is a panel-derived control that allows end-users to populate it with child controls and finally associate the same with a parent control. By default, it's hidden, and it can be brought into existence when performing events like mouse-down, mouse-up etc. over the parent control.
 
 ## Key Features
 
-* **Auto Scroll** - Scrollbar will be automatically shown when its items are populated beyond its default size.
+* **Auto Scroll** - Scrollbars are automatically shown when its items are populated beyond its default size.
 
-* **Auto Close** - The pop-up will be hidden when user clicks anywhere outside the container.
+* **Auto Close** - The pop-up is hidden when the user clicks anywhere outside the container.
 
-* **Keyboard Navigation** - By using keyboard dialog keys like Enter, Tab, Esc, etc... we can close the popup.
+* **Keyboard Navigation** - Dialog keys like Enter, Tab, Esc etc. It can be used to close the popup.
 
-* **RTL** - RTL is used to display the content from right to left.
+* **RTL** - Displays the content from right to left.
 

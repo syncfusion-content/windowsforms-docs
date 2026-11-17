@@ -9,14 +9,14 @@ documentation: ug
 
 # About Syncfusion® Windows Forms GridBagLayout Control
 
-`GridBagLayout` is a layout manager. It allows you arrange the child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns/rows varies, and the child controls may span to more than one cell.
+`GridBagLayout` is a layout manager that arranges child controls in a virtual grid of rows and columns. Unlike `GridLayout`, the size of the rows and columns can vary, and child controls can span more than one cell.
 
 ![GridBagLayout for Windows forms allows to arrange child controls in row and columns like grid](Overview_images/Overview_img1.jpeg)
 
 `GridBagLayout` is also used to layout the following controls:
 
-* Navigation buttons of the Wizard control.
-* Buttons of the Calculator control.
+* Navigation buttons in the Wizard control.
+* Buttons in the Calculator control.
 
 ## Key features
 

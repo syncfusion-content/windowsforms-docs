@@ -17,7 +17,7 @@ The `SfScrollFrame` attaches the theme-able scrollbars to any controls derived f
 
 Following are the key features of the `SfScrollFrame`:
 
-* `ScrollBar Appearance customization` : Supports customizing each element of the both the horizontal and vertical scrollbars.
-* `Scroll amount` : Supports changing the scrollbar value and `SmallChange` value for both the horizontal and vertical scrollbars.
-* `ScrollBar context menu customization` : Supports customizing the default context menu of horizontal and vertical scrollbars.
-* `Localization` : Supports localizing the default strings of the horizontal and vertical scrollbar context menu.
+* `ScrollBar appearance customization`: Supports customizing each element of both the horizontal and vertical scrollbars.
+* `Scroll amount`: Supports changing the scrollbar value and the `SmallChange` value for both the horizontal and vertical scrollbars.
+* `ScrollBar context menu customization`: Supports customizing the default context menu of the horizontal and vertical scrollbars.
+* `Localization`: Supports localizing the default strings of the horizontal and vertical scrollbar context menus.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Prevent ToggleButton State Change | Syncfusion®
-description: Learn how to prevent the Toggle Button from changing state in Syncfusion Windows Forms Toggle Button control, its elements and more details.
+description: Learn how to prevent the WinForms Toggle Button from changing state by handling the ToggleStateChanging event and cancelling the change.
 platform: windowsforms
 control: ToggleButton
 documentation: ug

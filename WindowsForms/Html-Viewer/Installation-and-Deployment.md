@@ -64,7 +64,7 @@ To view the samples, follow the steps below:
 
 
 
-N> You can view the samples in any of the following three ways:
+>**NOTE**: You can view the samples in any of the following three ways:
 
 
 

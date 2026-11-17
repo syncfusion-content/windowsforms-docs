@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Configure Toggle States in Windows Forms ToggleButton | Syncfusion®
-description: Learn about Toggle State Configuration support in Syncfusion Windows Forms Toggle Button control and more details.
+description: Learn about toggle state configuration in Syncfusion Windows Forms Toggle Button control, including active and inactive state styling and runtime toggling.
 platform: windowsforms
-control: ToggleButton 
+control: ToggleButton
 documentation: ug
 ---
 
 # Configure Toggle States in WinForms Toggle Button
 
-WinForms Toggle Button is configured with two states (Active and Inactive) contrasting each other. Toggling can be handled at runtime either through mouse click or through space key.
+WinForms Toggle Button is configured with two states (Active and Inactive) that contrast each other. Toggling can be handled at runtime either through a mouse click or through the space key.
 
-![different togglestates of togglebutton](Toggle-State-Configuration_images/Toggle-State-Configuration_img1.png)
+![Active and inactive toggle states of the WinForms Toggle Button](Toggle-State-Configuration_images/Toggle-State-Configuration_img1.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -33,7 +33,7 @@ Me.ToggleButton1.ToggleState = ToggleButtonState.Active
 
 ## Active state
 
-In the WinForms Toggle Button, active state is represented uniquely through its styling properties: BackColor, BorderColor, ForeColor, and HoverColor.
+In the WinForms Toggle Button, the active state is represented uniquely through its styling properties: `BackColor`, `BorderColor`, `ForeColor`, and `HoverColor`.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,11 +57,11 @@ Me.toggleButton1.ActiveState.HoverColor = Color.FromArgb(0, 103, 176)
 {% endhighlight %}
 {% endtabs %}
 
-![Active state of togglebutton](Toggle-State-Configuration_images/Toggle-State-Configuration_img2.png)
+![Active state styling of the WinForms Toggle Button](Toggle-State-Configuration_images/Toggle-State-Configuration_img2.png)
 
 ## Inactive state
 
-Similar to the active state, inactive state is represented uniquely through its styling properties: BackColor, BorderColor, ForeColor, and HoverColor.
+Similar to the active state, the inactive state is represented uniquely through its styling properties: `BackColor`, `BorderColor`, `ForeColor`, and `HoverColor`.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,4 +85,4 @@ Me.toggleButton1.InactiveState.HoverColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![Inactive state of togglebutton](Toggle-State-Configuration_images/Toggle-State-Configuration_img3.png)
+![Inactive state styling of the WinForms Toggle Button](Toggle-State-Configuration_images/Toggle-State-Configuration_img3.png)

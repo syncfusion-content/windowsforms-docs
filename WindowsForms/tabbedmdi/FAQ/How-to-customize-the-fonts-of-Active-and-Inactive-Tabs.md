@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Customize Fonts of Tabs in TabbedMDI | Syncfusion®
-description: Learn how to customize the fonts of active and inactive tabs in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn how to customize the fonts of active and inactive tabs in the Syncfusion Windows Forms TabbedMDI control by handling the TabControlAdded event.
 platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
@@ -13,7 +13,7 @@ Using the [TabControlAdded](https://help.syncfusion.com/cr/windowsforms/Syncfusi
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

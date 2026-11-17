@@ -92,7 +92,6 @@ public class CustomRenderer : ISplitButtonRenderer
         buttoninner.Dispose();
         innercolor.Dispose();
         arrowinner.Dispose();
-        arrowinner.Dispose();
         outercolor.Dispose();
     }
     public void DrawArrow(int left, int top, int width, int height, PaintEventArgs e, Color ArrowColor)
@@ -102,7 +101,7 @@ public class CustomRenderer : ISplitButtonRenderer
         Rectangle imageRect = new Rectangle(left + 4, top + 14, width - 9, height - 28);
         e.Graphics.DrawImage(arrowImage, imageRect);
     }
-    #end region
+    #endregion
     #region ISplitButtonRenderer Members
     public SplitButton SplitButton
     {
@@ -115,7 +114,7 @@ public class CustomRenderer : ISplitButtonRenderer
             splitButton = value;
         }
     }
-    #end region
+    #endregion
 }
 
 {% endhighlight %}
@@ -169,7 +168,6 @@ e.Graphics.DrawLine(outercolor_Renamed, New Point(0, 1), New Point(0, height - 2
 e.Graphics.DrawLine(outercolor_Renamed, New Point(1, 0), New Point(1, 1))
 buttoninner_Renamed.Dispose()
 innercolor_Renamed.Dispose()
-arrowinner_Renamed.Dispose()
 arrowinner_Renamed.Dispose()
 outercolor_Renamed.Dispose()
 End Sub

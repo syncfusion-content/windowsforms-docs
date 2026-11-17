@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation in Windows Forms SfNumericTextBox | Syncfusion®
-description: Learn about Validation support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
+description: Learn about validation options in the Syncfusion Windows Forms Numeric TextBox control, including validation and value update modes.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug
@@ -9,21 +9,21 @@ documentation: ug
 
 # Validation in WinForms Numeric TextBox
 
-WinForms Numeric TextBox allows data validation, which enables user to validate the values and notify the errors using the Validating event.
+WinForms Numeric TextBox allows data validation, which enables the user to validate the values and notify of errors using the `Validating` event.
 
 ## ValidationMode
 
-This [ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_ValidationMode) property decides whether to validate the entered text on KeyPress or on LostFocus. By default, the validation is done at lost focus.
+This [ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_ValidationMode) property decides whether to validate the entered text on `KeyPress` or on `LostFocus`. By default, the validation is done at lost focus.
 
-*	KeyPress
-    The decimal mask will be maintained while entering value and the MinValue, MaxValue validation will be carried out while entering the value.
+* **KeyPress**
+    The decimal mask is maintained while entering a value, and the `MinValue` and `MaxValue` validation is carried out while entering the value.
 
-*	LostFocus
-    In contrary with the KeyPress, the decimal mask, MinValue and MaxValue validation will be carried out only when control lost its focus.
+* **LostFocus**
+    In contrast with `KeyPress`, the decimal mask, `MinValue`, and `MaxValue` validation are carried out only when the control loses its focus.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.numericTextBox.ValidationMode = Syncfusion.WinForms.Input.Enums.ValidationMode.KeyPress;
 
@@ -31,7 +31,7 @@ this.numericTextBox.ValidationMode = Syncfusion.WinForms.Input.Enums.ValidationM
 
 {% highlight VB %}
 
-Me. numericTextBox.ValidationMode = Syncfusion.WinForms.Input.Enums.ValidationMode.KeyPress
+Me.numericTextBox.ValidationMode = Syncfusion.WinForms.Input.Enums.ValidationMode.KeyPress
 
 {% endhighlight %}
 
@@ -39,14 +39,14 @@ Me. numericTextBox.ValidationMode = Syncfusion.WinForms.Input.Enums.ValidationMo
 
 ## ValueChangeMode
 
-The [ValueChangeMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_ValueChangeMode) property is used to mention when the value need to update, either in key pressed or in lost focus. When ValueChangeMode is assigned to KeyPress, the value property will get updated for each key press. While in LostFocus, the Value property will get updated only when control lost its focus.
+The [ValueChangeMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_ValueChangeMode) property is used to specify when the value needs to be updated, either on key press or on lost focus. When `ValueChangeMode` is assigned to `KeyPress`, the `Value` property is updated for each key press. While in `LostFocus`, the `Value` property is updated only when the control loses its focus.
 
-*	LostFocus
-*	KeyPress
+* **LostFocus**
+* **KeyPress**
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.numericTextBox.ValueChangeMode = Syncfusion.WinForms.Input.Enums.ValueChangeMode.LostFocus;
 
@@ -60,27 +60,27 @@ Me.numericTextBox.ValueChangeMode = Syncfusion.WinForms.Input.Enums.ValueChangeM
 
 {% endtabs %}
 
-N> When value change mode is in keypress, the value gets updated only when the MinValue, MaxValue and number decimal digit validation gets passed.
+>**NOTE**: When the value change mode is set to `KeyPress`, the value is updated only when the `MinValue`, `MaxValue`, and number decimal digit validation checks are passed.
 
 ## LostFocusValidation
 
-While the control losing its focus, the valid value need to be maintained. If the entered value is valid there will be no change. But if the value is not valid it need to be reset to valid value. For this case the reset can be done to any of below value.
+When the control is losing its focus, a valid value needs to be maintained. If the entered value is valid, there is no change. If the value is not valid, it needs to be reset to a valid value. In this case, the reset can be done to any of the values below.
 
-*	Reset
+* **Reset**
 
-    It resets the invalid value to its last valid value.
+    Resets the invalid value to its last valid value.
 
-*	MaxValue
+* **MaxValue**
 
-    It resets the invalid value to the MaxValue given in the control.
+    Resets the invalid value to the `MaxValue` specified in the control.
 
-*	MinValue
+* **MinValue**
 
-    It resets the invalid value to the MinValue given in the control.
+    Resets the invalid value to the `MinValue` specified in the control.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.numericTextBox.LostFocusValidation = Syncfusion.WinForms.Input.Enums.ValidationResetOption.MaxValue;
 

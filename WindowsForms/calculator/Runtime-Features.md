@@ -9,11 +9,11 @@ documentation: ug
 
 # RunTime Features in WinForms Calculator
 
-This section elaborated keyboard support for the control.
+This section elaborates the keyboard support for the control.
 
 ## Keyboard Support
 
-Essential<sup>®</sup> Tools [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) does the functionality of a normal calculator, using the Mouse or Keyboard, at run time. The control provides Keyboard equivalents for the Calculator buttons. They are listed in the below table.
+Essential<sup>®</sup> Tools [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) replicates the functionality of a normal calculator, using the mouse or keyboard, at run time. The control provides keyboard equivalents for the calculator buttons. They are listed in the table below.
 
 
 <table>
@@ -140,7 +140,7 @@ F9</td></tr>
 <tr>
 <td>
 .</td><td>
-Inserts a decimal point. To use a different character for the decimal point, click start, point to settings, and then click control panel. Double click Regional Options and then click the Numbers tab.</td><td>
+Inserts a decimal point. To use a different character for the decimal point, change the regional setting on your system (Start &rarr; Settings &rarr; Control Panel &rarr; Regional Options &rarr; Numbers tab).</td><td>
 . or ,</td></tr>
 <tr>
 <td>

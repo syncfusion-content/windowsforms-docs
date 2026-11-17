@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Loading HTML in Windows Forms HTMLUI | Syncfusion®
-description: Learn about Loading HTML support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about loading HTML documents into the WinForms HTML Viewer control from files, embedded resources, URLs, and string content.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -42,7 +42,7 @@ While coding for the Startup Document, it should be written in the form_load eve
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -113,7 +113,7 @@ The HTML file that is located in the user's disk can be loaded into the WinForms
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -163,7 +163,7 @@ The WinForms HTML Viewer supports Link property. Links in HTML code are easily i
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -266,7 +266,7 @@ HTML contents can also be loaded from the URI (Uniform Resource Identifier). Thi
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -300,7 +300,7 @@ The HTML code sometimes can be directly written and stored as a string. The HTML
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -408,7 +408,7 @@ The file can be retrieved from the resource by using the following C# code.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -448,7 +448,7 @@ The [GetExecutingAssembly](https://learn.microsoft.com/en-us/dotnet/api/system.r
 
 The System.IO.Stream is used to provide a generic view of sequence of bytes when the IO in the assembly is referred.
 
-N> The string entered inside the [GetManifestResourceStream](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getmanifestresourcestream?view=netframework-4.7.2) method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
+>**NOTE**: The string entered inside the [GetManifestResourceStream](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getmanifestresourcestream?view=netframework-4.7.2) method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
 
 The following image shows file loaded from an embedded resource.
 

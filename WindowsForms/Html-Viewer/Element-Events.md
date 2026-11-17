@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Element Events in Windows Forms HTMLUI | Syncfusion®
-description: Learn about Element Events support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about element-level events in the WinForms HTML Viewer control, including Click, KeyDown, and other interaction events for HTML elements.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -29,7 +29,7 @@ Each HTML element in an HTML document is made to support events, such asClick, D
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 // Object declaration for the textarea element in the html document rendered in the control.
@@ -175,7 +175,7 @@ Another important feature of the WinForms HTML Viewer is its Bubbling Event arch
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -191,7 +191,7 @@ tab[0].MouseLeave += new EventHandler(body_MouseLeave);
 
 
 
-// Event occurs when the mouse pointer leaves the  control.
+// Event occurs when the mouse pointer leaves the  control.
 
 private void body_MouseLeave(object sender, EventArgs e)
 
@@ -239,7 +239,7 @@ else if(elem.ID == "button2")
 
 
 
-‘Event occurs when the mouse pointer leaves the  control.
+‘Event occurs when the mouse pointer leaves the  control.
 
 Private Sub htmluiControl1_LoadFinished(ByVal sender As Object, ByVal e As System.EventArgs)
 

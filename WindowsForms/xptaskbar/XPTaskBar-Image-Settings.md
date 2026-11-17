@@ -23,9 +23,13 @@ Drag and drop the ImageList control onto the form and add images to it using the
 
 {% highlight C# %}  
 
-this.xpTaskBarBox1.ImageList = this.imageList1;
+//Initialize the image lists.
+System.Windows.Forms.ImageList imageList1 = new System.Windows.Forms.ImageList();
+System.Windows.Forms.ImageList imageList2 = new System.Windows.Forms.ImageList();
 
-this.xpTaskBarBox1.HeaderImageList = this.imageList2;
+this.xpTaskBarBox1.ImageList = imageList1;
+
+this.xpTaskBarBox1.HeaderImageList = imageList2;
 
 this.xpTaskBarBox1.HeaderImageIndex = 0;
 
@@ -35,9 +39,13 @@ this.xpTaskBarBox1.HeaderImageIndex = 0;
 
 {% highlight VB %}
 
-Me.xpTaskBarBox1.ImageList = Me.imageList1
+'Initialize the image lists.
+Dim imageList1 As New System.Windows.Forms.ImageList()
+Dim imageList2 As New System.Windows.Forms.ImageList()
 
-Me.xpTaskBarBox1.HeaderImageList = Me.imageList2
+Me.xpTaskBarBox1.ImageList = imageList1
+
+Me.xpTaskBarBox1.HeaderImageList = imageList2
 
 Me.xpTaskBarBox1.HeaderImageIndex = 0
 
@@ -77,11 +85,11 @@ this.xpTaskBarBox1.Items[2].ImageIndex = 2;
 
 Me.xpTaskBarBox1.ImageList = Me.imageList1
 
-Me.xpTaskBarBox1.Items(0)ImageIndex = 0
+Me.xpTaskBarBox1.Items(0).ImageIndex = 0
 
-Me.xpTaskBarBox1.Items(1)ImageIndex = 1
+Me.xpTaskBarBox1.Items(1).ImageIndex = 1
 
-Me.xpTaskBarBox1.Items(2)ImageIndex = 2
+Me.xpTaskBarBox1.Items(2).ImageIndex = 2
 
 {% endhighlight %}
 

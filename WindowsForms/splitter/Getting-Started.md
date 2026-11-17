@@ -34,7 +34,7 @@ To add SplitterControl to the Windows Forms Application through the following co
 
    {% highlight C# %}
 
-		//Namespaces.
+		// Namespaces.
 
 		using Syncfusion.Windows.Forms.Tools;
 
@@ -45,7 +45,7 @@ To add SplitterControl to the Windows Forms Application through the following co
 
    {% highlight VB %}
 
-		‘Namespaces.
+		' Namespaces.
 
 		Imports Syncfusion.Windows.Forms
 
@@ -65,9 +65,9 @@ To add SplitterControl to the Windows Forms Application through the following co
 
    {% highlight C# %}
 
-		//Creates the SplitterControl instance.
+		// Creates the SplitterControl instance.
 
-		SplitterControl splitterControl1=new Syncfusion.Windows.Forms.SplitterControl();
+		SplitterControl splitterControl1 = new Syncfusion.Windows.Forms.SplitterControl();
 
 		this.Controls.Add(splitterControl1);
 
@@ -75,7 +75,7 @@ To add SplitterControl to the Windows Forms Application through the following co
 
     {% highlight VB %}
 
-		‘Creates the SplitterControl instance.
+		' Creates the SplitterControl instance.
 
 		Dim splitterControl1 As New Syncfusion.Windows.Forms.SplitterControl()
 

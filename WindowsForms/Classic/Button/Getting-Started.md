@@ -9,37 +9,37 @@ documentation: ug
 
 # Getting Started with Windows Forms ButtonAdv(Classic)
 
-This section explains how to create a new Windows Forms project in Visual Studio and add **ButtonAdv"** with it's basic functionalities.
+This section explains how to create a new Windows Forms project in Visual Studio and add `ButtonAdv` with its basic functionality.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#buttonadv) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#buttonadv) section for the list of assemblies or NuGet package references required to use the control in an application.
 
 [Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about on how to install nuget packages in Windows Forms application. 
 
-## Adding a ButtonAdv control through designer
+## Adding a ButtonAdv control through the designer
 
-**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the ButtonAdv from toolbox into form design view. The following dependent assemblies will be added automatically.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop `ButtonAdv` from the toolbox into the form designer. The required dependent assemblies are added automatically.
 
 * Syncfusion.Shared.Base
 
 ![Windows forms ButtonAdv drag and drop from toolbox](Overview_images/ButtonAdv_dragdrop.png)
 
-![Windows forms ButtonAdv Assembly reference](Overview_images/ButtonAdv_reference.png)
+![Windows forms ButtonAdv assembly reference](Overview_images/ButtonAdv_reference.png)
 
-**Step 2**: Set the desired properties for **"ButtonAdv"** control through the **"Properties"** dialog window. Here we have illustrated an example of how to add image and customize its properties. 
+**Step 2**: Set the desired properties for the `ButtonAdv` control through the Properties window. The following example shows how to add an image and customize its properties.
 
 ![Windows forms ButtonAdv customizing Image property](Overview_images/ButtonAdv_image.png)
 
 ![Windows forms ButtonAdv TextImage relation property](Overview_images/ButtonAdv_textimage.png)
 
-**Step 3**: Run the application and the following output will be shown:
+**Step 3**: Run the application. The following output is shown:
 
 ![Windows forms ButtonAdv through designer](Overview_images/ButtonAdvoutputdesigner_office2019theme.png)
 
 ## Adding a ButtonAdv control through code
 
-**Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project. 
+**Step 1**: Create a new Windows Forms application in Visual Studio and add the required assembly references and namespace.
 
 * Syncfusion.Shared.Base
 
@@ -67,18 +67,18 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% highlight c# %}
 
- public Form1()
- {
-            
-            InitializeComponent();
-            ButtonAdv button = new ButtonAdv();
-            button.UseVisualStyle = true;
-            button.Location = new System.Drawing.Point(296, 179);
-            button.Name = "buttonAdv1";
-            button.Size = new System.Drawing.Size(165, 82);
-            button.Text = "ButtonAdv";
-            button.ThemeName = "Office2019Colorful";
-            this.Controls.Add(button);
+public Form1()
+{
+    InitializeComponent();
+
+    ButtonAdv button = new ButtonAdv();
+    button.UseVisualStyle = true;
+    button.Location = new System.Drawing.Point(296, 179);
+    button.Name = "buttonAdv1";
+    button.Size = new System.Drawing.Size(165, 82);
+    button.Text = "ButtonAdv";
+    button.ThemeName = "Office2019Colorful";
+    this.Controls.Add(button);
 }
 
 {% endhighlight %}
@@ -86,8 +86,8 @@ Imports Syncfusion.Windows.Forms.Tools
 {% highlight vb %}
 
 Public Sub New()
-
     InitializeComponent()
+
     Dim button As ButtonAdv = New ButtonAdv()
     button.UseVisualStyle = True
     button.Location = New System.Drawing.Point(296, 179)
@@ -103,33 +103,31 @@ End Sub
 
 {% endtabs %}
 
-**Step 3**: Run the application and the following output will be shown.
+**Step 3**: Run the application. The following output is shown:
 
 ![Windows forms ButtonAdv through code](Overview_images/ButtonAdvoutputthroughcode.png)
 
-## Adding an image and relation location for the image with ButtonAdv's Text
+## Adding an image and setting the image-text relationship for ButtonAdv
 
-In ButtonAdv control, we can embed image using the **Image** property. Meanwhile in-order to set the image along with custom text, we can use the **Text** property and define relation between image and text using **TextImageRelation** property.
+In `ButtonAdv`, an image can be embedded using the `Image` property. To display an image together with custom text, set the `Text` property and then define the relationship between the image and text by using `TextImageRelation`.
 
 {% tabs %}
 
 {% highlight c# %}
 
- public Form1()
- {
-            
-            InitializeComponent();
-            ButtonAdv button = new ButtonAdv();
-            //Adding the image to ButtonAdv control
-            button.Image = global::WindowsFormsApplication1.Properties.Resources.Calculatorimage;
-            button.Location = new System.Drawing.Point(296, 179);
-            button.Name = "buttonAdv1";
-            button.Size = new System.Drawing.Size(165, 82);
-            button.Text = "ButtonAdv";
-            //Setting the TextImageRelation property to the button
-            button.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button.ThemeName = "Office2019Colorful";
-            this.Controls.Add(button);
+public Form1()
+{
+    InitializeComponent();
+
+    ButtonAdv button = new ButtonAdv();
+    button.Image = global::WindowsFormsApplication1.Properties.Resources.Calculatorimage;
+    button.Location = new System.Drawing.Point(296, 179);
+    button.Name = "buttonAdv1";
+    button.Size = new System.Drawing.Size(165, 82);
+    button.Text = "ButtonAdv";
+    button.TextImageRelation = TextImageRelation.ImageBeforeText;
+    button.ThemeName = "Office2019Colorful";
+    this.Controls.Add(button);
 }
 
 {% endhighlight %}
@@ -137,16 +135,14 @@ In ButtonAdv control, we can embed image using the **Image** property. Meanwhile
 {% highlight vb %}
 
 Public Sub New()
-
     InitializeComponent()
+
     Dim button As ButtonAdv = New ButtonAdv()
-    'Adding the image to ButtonAdv control
     button.Image = [global].WindowsFormsApplication1.Properties.Resources.Calculatorimage
     button.Location = New System.Drawing.Point(296, 179)
     button.Name = "buttonAdv1"
     button.Size = New System.Drawing.Size(165, 82)
     button.Text = "ButtonAdv"
-    'Setting the TextImageRelation property to the button
     button.TextImageRelation = TextImageRelation.ImageBeforeText
     button.ThemeName = "Office2019Colorful"
     Me.Controls.Add(button)

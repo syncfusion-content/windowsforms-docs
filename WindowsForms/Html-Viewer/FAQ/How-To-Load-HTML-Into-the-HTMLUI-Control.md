@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Load HTML Into the HTMLUI Control | Syncfusion®
-description: Learn how to Load HTML Into the HTMLUI Control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+description: Learn how to loading HTML into the WinForms HTML Viewer control from a file, stream, string, or URL.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
@@ -27,7 +27,7 @@ You can make use of the [GetControlByElement](https://help.syncfusion.com/cr/win
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -112,7 +112,7 @@ While using code for the Startup Document, it should be written in the Form_Load
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -154,7 +154,7 @@ To load the file from disk into the WinForms HTML Viewer, the following code sni
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -186,7 +186,7 @@ To load a file from the URI, the following code snippet can be used.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -220,7 +220,7 @@ Loading HTML in the form of a string can be done as shown below.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -252,10 +252,9 @@ To load an HTML file as an embedded resource, follow the given steps:
 2. Set its BuildAction as Embedded Resource.
 3. Include the following code snippet.
 
-{% capture codesnippet1 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -278,9 +277,8 @@ Me.HtmluiControl1.LoadHTML(htmlStream)
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-N> The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
+
+>**NOTE**: The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # BarItem Types in Windows Forms XPToolbar
 
-The various types of BarItems supported by XPToolBar are,
+The various types of BarItems supported by XPToolBar are as follows:
 
 * BarItem
 * ParentBarItem
@@ -35,7 +35,7 @@ ParentBarItems represents the submenu that appears on drop down list. BarItems c
 
 ### Adding ParentBarItem through designer
 
-1. Once XPToolBar control is added, we can add the parent bar item by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
+1. Once XPToolBar control is added, we can add the parent bar item by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
 
    ![ParentBarItem](BarItems_Images/Properties.png)
 
@@ -163,7 +163,7 @@ DropDownBarItem represents submenu that will appear as popup when clicked on it.
 
 ### Adding DropDownBarItem through designer
 
-1. Once XPToolBar control is added, we can add **DropDownBarItem** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
+1. Once XPToolBar control is added, we can add **DropDownBarItem** by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
 
    ![DropDownBarItem](BarItems_Images/Properties.png)
 
@@ -179,7 +179,7 @@ DropDownBarItem represents submenu that will appear as popup when clicked on it.
 
    ![DropDownBarItem](BarItems_Images/Properties15.png)
 
-4. Drag and drop any control like Button, Label, TextBox, etc... to the **PopupControlContainer**. In this illustration, we have used **Button**.
+4. Drag and drop any control like Button, Label, TextBox, etc., to the **PopupControlContainer**. In this illustration, we have used **Button**.
 
 ### Adding DropDownBarItem through code
 
@@ -319,7 +319,7 @@ ComboBoxBarItem represents a BarItem that provides the combo box functionality i
 
 ### Adding ComboBoxBarItem through designer
 
-1. Once XPToolBar control is added, we can add the combobox bar item by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
+1. Once XPToolBar control is added, we can add the combobox bar item by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
 
    ![ComboBoxBarItem](BarItems_Images/Properties.png)
 
@@ -335,7 +335,7 @@ ComboBoxBarItem represents a BarItem that provides the combo box functionality i
  
    ![ComboBoxBarItem](BarItems_Images/Properties17.png)
 
-4. Finally, we have add the ComboBoxBarItem in XPToolBar control successfully.
+4. Finally, we have added the ComboBoxBarItem in XPToolBar control successfully.
 
    ![ComboBoxBarItem](BarItems_Images/ComboBox.png)
 
@@ -487,11 +487,11 @@ Me.Controls.Add(Me.panel1)
 
 ## ListBarItem
 
-By using ListBarItem, you have to represent a dynamic list of BarItems.
+ListBarItem represents a dynamic list of BarItems.
 
 ### Adding ListBarItem through designer
 
-1. Once XPToolBar control is added, We can add the **ListBarItem** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
+1. Once XPToolBar control is added, we can add the **ListBarItem** by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
 
    ![ListBarItem](BarItems_Images/Properties.png)
 
@@ -507,7 +507,7 @@ By using ListBarItem, you have to represent a dynamic list of BarItems.
 
    ![ListBarItem](BarItems_Images/Properties21.png)
 
-6. Finally, we have add the ListBarItem in XPToolBar control successfully.
+4. Finally, we have added the ListBarItem in XPToolBar control successfully.
 
    ![ListBarItem](BarItems_Images/ListBarItem.png)
 
@@ -681,7 +681,7 @@ StaticBarItem represents a BarItem that could be used as a label for an adjacent
 
 ### Adding StaticBarItem through designer
 
-1. Once XPToolBar control is added, We can add the **StaticBarItem** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
+1. Once XPToolBar control is added, we can add the **StaticBarItem** by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
 
    ![StaticBarItem](BarItems_Images/Properties.png)
 
@@ -873,7 +873,7 @@ ToolbarList bar item is used to display the current list of toolbars and their s
 
 ### Adding ToolbarListBarItem through designer
 
-1. Once XPToolBar control is added, We can add the **ToolbarListBarItem** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
+1. Once XPToolBar control is added, we can add the **ToolbarListBarItem** by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
 
    ![ToolbarListBarItem](BarItems_Images/Properties.png)
 
@@ -1026,11 +1026,11 @@ Me.Controls.Add(Me.xpToolBar1)
 
 ## TextBoxBarItem
 
-TextBoxBarItem is used to provides the TextBox functionality in the **XPToolBar**.
+TextBoxBarItem is used to provide the TextBox functionality in the **XPToolBar**.
 
 ### Adding TextBoxBarItem through designer
 
-1. Once XPToolBar control is added, We can add the **TextBoxBarItem** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
+1. Once XPToolBar control is added, we can add the **TextBoxBarItem** by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
 
    ![TextBoxBarItem](BarItems_Images/Properties.png)
 
@@ -1245,11 +1245,11 @@ Me.Controls.Add(Me.panel1)
 
 ## Separator
 
-Separator is Used for separation of bar items visually in a **XPToolBar**.
+Separator is used for separation of bar items visually in a **XPToolBar**.
 
 ### Adding Separator through designer
 
- Once XPToolBar control is added, We can add the **Separator** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > SeparatorIndices** set the **Indices** values which the separator have to be placed from the **Int32 Collection Editor**.
+ Once XPToolBar control is added, we can add the **Separator** by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > SeparatorIndices** set the **Indices** values which the separator have to be placed from the **Int32 Collection Editor**.
 
    ![Separator](BarItems_Images/Properties.png)
 

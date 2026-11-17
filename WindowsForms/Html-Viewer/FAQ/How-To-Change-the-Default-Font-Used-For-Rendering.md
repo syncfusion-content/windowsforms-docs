@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Change Default Font for Rendering in Html Viewer | Syncfusion®
-description: Learn how to change the Default Font Used for Rendering in Syncfusion Windows Forms Html Viewer control, its elements and more details.
+description: Learn how to changing the default font used for rendering HTML content in the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
@@ -13,7 +13,7 @@ WinForms HTML Viewer uses a default font to render the text from the HTML docume
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

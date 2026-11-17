@@ -75,7 +75,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% highlight C# %}
 
 Carousel carousel1 = new Carousel();
-this.Controls.Add(carousel);
+this.Controls.Add(carousel1);
 
 {% endhighlight %}
 
@@ -91,21 +91,21 @@ Me.Controls.Add(carousel1)
 
 ## Adding controls into Carousel
 
-You can load custom controls in Carousel, and it needs to be added into the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_Items) collection property in Carousel class.
+You can load custom controls in Carousel, and they need to be added into the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_Items) collection property in Carousel class. The controls must also be added to the Carousel's `Controls` collection so that they are rendered on the form. The following example uses the [ButtonAdv](https://help.syncfusion.com/windowsforms/buttonadv/overview) control.
 
 {% tabs %}
 
 {% highlight C# %}
 
 //Initialization
-ButtonAdv buttonAdv1 =new ButtonAdv();
-ButtonAdv buttonAdv2 =new ButtonAdv();
-ButtonAdv buttonAdv3 =new ButtonAdv();
-ButtonAdv buttonAdv4 =new ButtonAdv();
-ButtonAdv buttonAdv5 =new ButtonAdv();
-ButtonAdv buttonAdv6 =new ButtonAdv();
+ButtonAdv buttonAdv1 = new ButtonAdv();
+ButtonAdv buttonAdv2 = new ButtonAdv();
+ButtonAdv buttonAdv3 = new ButtonAdv();
+ButtonAdv buttonAdv4 = new ButtonAdv();
+ButtonAdv buttonAdv5 = new ButtonAdv();
+ButtonAdv buttonAdv6 = new ButtonAdv();
 
-//Set the properties for all buttonadv control
+//Set the properties for all ButtonAdv controls
 buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
 buttonAdv1.ForeColor = System.Drawing.Color.White;
 
@@ -199,7 +199,7 @@ carousel1.Items.Add(buttonAdv6)
 
 ## Adding images into Carousel
 
-You can load images in Carousel, it needs to added into [ImageListCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageListCollection) property in Carousel class.
+You can load images in Carousel, it needs to be added into the [ImageListCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageListCollection) property in Carousel class. For more details, refer to the [ImageSlides](https://help.syncfusion.com/windowsforms/carousel/imageslides) documentation.
 
 {% tabs %}
 
@@ -216,7 +216,7 @@ CarouselImage carouselImage4 = new CarouselImage();
 CarouselImage carouselImage5 = new CarouselImage();
 CarouselImage carouselImage6 = new CarouselImage();
 
-// Adding carousel image
+// Adding carousel images from application resources
 carouselImage1.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage1.ItemImage")));
 carouselImage2.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage2.ItemImage")));
 carouselImage3.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage3.ItemImage")));
@@ -224,7 +224,7 @@ carouselImage4.ItemImage = ((System.Drawing.Image)(resources.GetObject("carousel
 carouselImage5.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage5.ItemImage")));
 carouselImage6.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage6.ItemImage")));
 
-// Add capture images to imagelistcollection
+// Add the carousel images to imagelistcollection
 this.carousel1.ImageListCollection.Add(carouselImage1);
 this.carousel1.ImageListCollection.Add(carouselImage2);
 this.carousel1.ImageListCollection.Add(carouselImage3);
@@ -255,7 +255,7 @@ carouselImage4.ItemImage = (CType(resources.GetObject("carouselImage4.ItemImage"
 carouselImage5.ItemImage = (CType(resources.GetObject("carouselImage5.ItemImage"), System.Drawing.Image))
 carouselImage6.ItemImage = (CType(resources.GetObject("carouselImage6.ItemImage"), System.Drawing.Image))
 
-' Add capture images to imagelistcollection
+' Add the carousel images to imagelistcollection
 Me.carousel1.ImageListCollection.Add(carouselImage1)
 Me.carousel1.ImageListCollection.Add(carouselImage2)
 Me.carousel1.ImageListCollection.Add(carouselImage3)
@@ -267,4 +267,6 @@ Me.carousel1.ImageListCollection.Add(carouselImage6)
 
 {% endtabs %}
 
-![Images are added in Carusel via code](Getting-Started_images/Carousel_image.gif)
+In the above example, `resources` refers to a `System.ComponentModel.ComponentResourceManager` instance used to load images embedded in the application's resources. Alternatively, you can load images directly using `System.Drawing.Image.FromFile` with the path of an image file.
+
+![Images are added in Carousel via code](Getting-Started_images/Carousel_image.gif)

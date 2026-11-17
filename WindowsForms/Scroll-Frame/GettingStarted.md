@@ -11,7 +11,7 @@ documentation: ug
 
 ## Assembly deployment
 
-The following list of assembly should be added as reference to use [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html) component in any application:
+The following assemblies should be added as references to use the [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html) component in any application:
 
 <table>
 <tr>
@@ -32,7 +32,7 @@ Syncfusion.Core.WinForms assembly contains the theme related classes for the Syn
 </tr>
 </table>
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfscrollframe) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfscrollframe) section to get the list of assemblies or NuGet packages that need to be added as references to use the control in any application. 
 
 ## Attaching SfScrollFrame to a control
 
@@ -79,7 +79,7 @@ this.sfScrollFrame1.Control = this.listView1;
 
 ### Through code
 
-To programmatically attach the SfScrollFrame to a control, set the [Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html#Syncfusion_WinForms_Controls_SfScrollFrame_Control) property to the appropriate value. 
+To programmatically attach the `SfScrollFrame` to a control, set the [Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html#Syncfusion_WinForms_Controls_SfScrollFrame_Control) property to the appropriate value. 
 
 {% tabs %}
 {% highlight c# %}

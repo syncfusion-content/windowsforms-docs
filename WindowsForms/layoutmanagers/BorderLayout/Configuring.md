@@ -9,101 +9,68 @@ documentation: ug
 
 # Configuring WinForms Border Layout
 
-The configuration settings for the WinForms Border Layout control have been given in this section.
+The configuration settings for the WinForms Border Layout control are described in this section.
 
 ## Spacing
 
 The horizontal and vertical gaps between the child controls can be set using the following properties.
 
 <table>
-
 <tr>
-
-<th>
-
-WinForms Border Layout properties</th><th>
-
-Description</th></tr>
-
+<th>WinForms Border Layout properties</th>
+<th>Description</th>
+</tr>
 <tr>
-
-<td>
-
-HGap<br/></td><td>
-
-Gets or sets the horizontal spacing between the layout border and the components.<br/></td></tr>
-
+<td>HGap</td>
+<td>Gets or sets the horizontal spacing between the layout border and the components.</td>
+</tr>
 <tr>
-
-<td>
-
-VGap<br/></td><td>
-
-Gets or sets the vertical spacing between the layout border and the components.<br/></td></tr>
-
+<td>VGap</td>
+<td>Gets or sets the vertical spacing between the layout border and the components.</td>
+</tr>
 </table>
 
 {% tabs %}
-
 {% highlight c# %}
-
 this.borderLayout1.HGap = 10;
 
 this.borderLayout1.VGap = 10;
-
-
-
 {% endhighlight %}
-
 {% highlight vb %}
-
 Me.borderLayout1.HGap = 10
 
 Me.borderLayout1.VGap = 10
-
 {% endhighlight %}
-
 {% endtabs %}
 
-![Aligning with space between child controls](configuring_images/configuring_img1.jpeg)
+![WinForms BorderLayout child controls separated by horizontal and vertical spacing](configuring_images/configuring_img1.jpeg)
 
-
-## Configuring child controls	
+## Configuring child controls
 
 The child controls can be aligned to various positions (North, South, East, West, and Center) using the following property.
 
 <table>
-
 <tr>
-<th>
-Child control property</th><th>
-Description</th></tr>
+<th>Child control property</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-
-Position on WinForms Border Layout<br/></td><td>
-Gets or sets the border position for a child components.<br/></td></tr>
-
+<td>Position on WinForms Border Layout</td>
+<td>Gets or sets the border position for a child component.</td>
+</tr>
 </table>
 
-N> This property is added as an extended property in the properties window of the child control added to WinForms Border Layout.
+>**NOTE**: This property is added as an extended property in the properties window of the child control added to WinForms Border Layout.
 
 {% tabs %}
-
 {% highlight c# %}
-
 this.borderLayout1.SetPosition(this.btnNorth, Syncfusion.Windows.Forms.Tools.BorderPosition.North);
-
 {% endhighlight %}
-
 {% highlight vb %}
-
 Me.borderLayout1.SetPosition(Me.btnNorth, Syncfusion.Windows.Forms.Tools.BorderPosition.North)
-
 {% endhighlight %}
-
 {% endtabs %}
 
-![Aligning child control to a different position](configuring_images/configuring_img2.jpeg)
+![WinForms BorderLayout child controls aligned to different border positions](configuring_images/configuring_img2.jpeg)
 
-![Aligning button at the North relative to container](configuring_images/configuring_img3.jpeg)
+![WinForms BorderLayout with a button aligned to the North region of the container](configuring_images/configuring_img3.jpeg)

@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® Windows Forms XPTaskPane Control
 
-[XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) is an Microsoft Office XP TaskPane inspired container control helps to host a number of [XPTaskPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPage.html), which the user can browse using a dropdown menu and the arrow buttons in task pane's header portion. 
+[XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) is a Microsoft Office XP TaskPane inspired container control that helps to host a number of [XPTaskPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPage.html), which the user can browse using a dropdown menu and the arrow buttons in the task pane's header portion. 
 
 ![Microsoft Office XP TaskPane inspired container](Overview_images/XPtaskPane_img1.png)
 
@@ -25,10 +25,6 @@ documentation: ug
 
 * **Page sequencing** - Provides options to reorder the pages through 'Bring to front' and 'Send to back' verbs or by using XPTaskPage Collection Editor.
 
-* **Visual style** - Support rich set of built-in themes like Office, Metro and much more.
-
-
-
-
+* **Visual style** - Supports a rich set of built-in themes like Office, Metro and much more.
 
 

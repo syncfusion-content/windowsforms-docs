@@ -217,26 +217,6 @@ interactiveCursor.YPosition = 150
 
 ![Interactive Cursor Positions in Windows Forms Chart](../Chart-User-Interactions_Images/interactive-cursor-position.png)
 
-
-## Redraw cursor lines
-
-The [LineRedraw](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html) property specifies whether the cursor lines must be redrawn when the cursor location changes. The default value is `false`.
-
-The following code enables cursor-line redrawing.
-
-{% tabs %}
-{% highlight c# %}
-
-interactiveCursor.LineRedraw = true;
-
-{% endhighlight %}
-{% highlight vb %}
-
-interactiveCursor.LineRedraw = True
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Tracked series and point
 
 The following read-only properties provide information about the data tracked by the cursor:

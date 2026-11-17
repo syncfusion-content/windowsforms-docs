@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Visual Styles in Windows Forms DomainUpdownExt | Syncfusion®
-description: Learn about Visual Styles support in Syncfusion Windows Forms DomainUpdownExt control and more details.
+description: Learn about visual styles in Syncfusion Windows Forms DomainUpdownExt control, including Office2007 themes, Office2016 themes, XP themes, and custom colors.
 platform: windowsforms
-control: DomainUpdownExt 
+control: DomainUpdownExt
 documentation: ug
 ---
+
 # Visual Styles in WinForms DomainUpDownExt
 
-WinForms DomainUpDownExt supports Office2007 visual style with all three color schemes.
+WinForms DomainUpDownExt supports the Office2007 visual style with all three color schemes.
 
 {% tabs %}
 {% highlight c# %}
@@ -25,7 +26,7 @@ this.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Sil
 //To set Black Color scheme.
 this.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
@@ -41,73 +42,73 @@ Me.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silve
 'To set Black Color scheme.
 Me.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs%}
 
-![Office2007 color themes](DomainUpdownExt_images/Overview_img427.png)
+![WinForms DomainUpDownExt with the Office2007 color themes](DomainUpdownExt_images/Overview_img427.png)
 
-It also provides support for XP Themes look and feel.
+It also provides support for the XP themes look and feel.
 
 {% tabs %}
 {% highlight c# %}
 
-//Enable Themes.
-this.domainUpDownExt1.ThemesEnabled =true;
+// Enable themes.
+this.domainUpDownExt1.ThemesEnabled = true;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
-'Enable Themes.
-Me.domainUpDownExt1.ThemesEnabled =True
+' Enable themes.
+Me.domainUpDownExt1.ThemesEnabled = True
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
-![DomainUpDownExt office2007 themes](DomainUpdownExt_images/Overview_img428.png) 
+![WinForms DomainUpDownExt with Office2007 themes applied](DomainUpdownExt_images/Overview_img428.png)
 
-![DomainUpDownExt themes enabled](DomainUpdownExt_images/Overview_img429.png)
+![WinForms DomainUpDownExt with themes enabled](DomainUpdownExt_images/Overview_img429.png)
 
 ## Office2016 Themes
 
-WinForms DomainUpDownExt supports Office2016 visual styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
+WinForms DomainUpDownExt supports Office2016 visual styles such as Office2016Colorful, Office2016White, Office2016Black, and Office2016DarkGray.
 
-//Sample code for setting "Office2016 Colorful" Visual style for WinForms DomainUpDownExt
+// Sample code for setting the "Office2016 Colorful" visual style for the WinForms DomainUpDownExt
 
 {% tabs %}
 {% highlight c# %}
 
 this.domainUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
-Me.domainUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+Me.domainUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
-![Office2016 theme](DomainUpdownExt_images/Overview_img433.png)
+![WinForms DomainUpDownExt with the Office2016 Colorful theme](DomainUpdownExt_images/Overview_img433.png)
 
 ## Custom Colors
 
-We can also apply custom colors to the WinForms DomainUpDownExt control by setting ColorScheme to "Managed" and specifying the custom color through the [ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method as follows.
+You can also apply custom colors to the WinForms DomainUpDownExt control by setting `ColorScheme` to "Managed" and specifying the custom color through the [ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method as follows.
 
 {% tabs %}
 {% highlight c# %}
 
 this.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-Office2007Colors.ApplyManagedColors(this,Color.Orange);
+Office2007Colors.ApplyManagedColors(this, Color.Orange);
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
-Me.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-Office2007Colors.ApplyManagedColors(Me,Color.Orange)
+Me.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
+Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
-![Custom colors](DomainUpdownExt_images/Overview_img430.png)
+![WinForms DomainUpDownExt with custom colors applied](DomainUpdownExt_images/Overview_img430.png)

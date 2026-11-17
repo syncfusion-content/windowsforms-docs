@@ -55,20 +55,20 @@ To add control manually in C#, follow the given steps:
         * Syncfusion.Tools.Base.dll
         * Syncfusion.Tools.Windows.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Tools.Windows**.
+**Step 2** - Include the namespace **Syncfusion.Windows.Forms.Tools**.
 
 {% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Tools.Windows;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Tools.Windows
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 
@@ -111,7 +111,7 @@ Me.Controls.Add(SplitContainerAdv1)
 
 ![WindowsForms Split Container control added by code](gettingstarted-images/windowsforms-split-container-added-by-code.png)
 
-**Add controls to SplitContainerAdv**
+### Add controls to SplitContainerAdv
 
 Create instance of the required Controls and add it to panels such as [Panel1](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_Panel1) or [Panel2](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_Panel2) of the SplitContainerAdv.
 
@@ -164,11 +164,11 @@ The SplitContainerAdv Panels can be oriented horizontally or vertically using th
 
 {% tabs %}
 {% highlight C# %}
-//Setting orientation
+// Setting orientation
 this.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical;
 {% endhighlight  %}
 {% highlight VB %}
-‘Setting orientation
+' Setting orientation
 Me.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical
 {% endhighlight  %}
 {% endtabs %} 

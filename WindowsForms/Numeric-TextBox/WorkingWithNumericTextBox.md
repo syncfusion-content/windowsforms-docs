@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with SfNumericTextBox in Windows Forms | Syncfusion®
-description: Learn about Working with NumericTextBox support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
+description: Learn about working with the Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control, including the ValueChanged event and its event data.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug
@@ -11,13 +11,13 @@ documentation: ug
 
 ## ValueChanged Event
 
-This [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) event triggers when the value of the WinForms Numeric TextBox is changed. The Value will be changed according to the ValueChangedMode property.
+This [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) event triggers when the value of the WinForms Numeric TextBox is changed. The value will be changed according to the `ValueChangedMode` property.
 
 ## Event Data
 
 `ValueChangedEventArgs` contains the following members that provide information specific to this event.
 
-Value changed Event
+The following table describes the members of the `ValueChangedEventArgs` class.
 
 <table>
 <tr>
@@ -33,7 +33,7 @@ Value changed Event
 OldValue
 </td>
 <td>
-This property returns the last Value of the WinForms Numeric TextBox
+Returns the last value of the WinForms Numeric TextBox.
 </td>
 </tr>
 <tr>
@@ -41,23 +41,23 @@ This property returns the last Value of the WinForms Numeric TextBox
 NewValue
 </td>
 <td>
-This property returns the new Value of the WinForms Numeric TextBox
+Returns the new value of the WinForms Numeric TextBox.
 </td>
 </tr>
 </table>
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Hooking the value changed event
 this.numericTextBox.ValueChanged += numericTextBox_ValueChanged;
 
-//Value changed event
-private void numericTextBox _ValueChanged(object sender, Syncfusion.WinForms.Input.Events.ValueChangedEventArgs e)
+// Value changed event
+private void numericTextBox_ValueChanged(object sender, Syncfusion.WinForms.Input.Events.ValueChangedEventArgs e)
 {
-	double? newValue = e.NewValue;
-	double? oldValue = e.OldValue;
+    double? newValue = e.NewValue;
+    double? oldValue = e.OldValue;
 }
 
 {% endhighlight %}
@@ -65,12 +65,12 @@ private void numericTextBox _ValueChanged(object sender, Syncfusion.WinForms.Inp
 {% highlight VB %}
 
 ' Hooking the value changed event
-Private Me.numericTextBox.ValueChanged += AddressOf numericTextBox_ValueChanged
+AddHandler Me.numericTextBox.ValueChanged, AddressOf numericTextBox_ValueChanged
 
-'Value changed event
-Private Sub numericTextBox _ValueChanged(ByVal sender As Object, ByVal e As Syncfusion.WinForms.Input.Events.ValueChangedEventArgs)
-	Dim newValue As double? = e.NewValue
-	Dim oldValue As double? = e.OldValue
+' Value changed event
+Private Sub numericTextBox_ValueChanged(ByVal sender As Object, ByVal e As Syncfusion.WinForms.Input.Events.ValueChangedEventArgs)
+    Dim newValue As Double? = e.NewValue
+    Dim oldValue As Double? = e.OldValue
 End Sub
 
 {% endhighlight %}

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # About Syncfusion® Windows Forms GroupBar Control
 
-The `GroupBar` control provides a navigation UI similar to Microsoft Outlook. It has a container to host controls within it. Use it to host a categorized collection of items and custom controls.
+The `GroupBar` control provides a navigation UI similar to Microsoft Outlook. It has a container to host controls within it. Use it to host a categorized collection of items and custom controls. The GroupBar control is also known as the Navigation Pane control.
 
 ## Key Features
 
@@ -18,12 +18,11 @@ The `GroupBar` control provides a navigation UI similar to Microsoft Outlook. It
 
 * **Localization**: Provides localization support for all elements in GroupBar into any desired language.
 
-* **Stacked GroupBar**: Provides options to display GroupBarItems in a Stack like fashion. Stacked GroupBar provides a Navigation Pane that can be viewed at the bottom of the Groupbar.
+* **Stacked GroupBar**: Provides options to display GroupBarItems in a Stack like fashion. Stacked GroupBar provides a Navigation Pane that can be viewed at the bottom of the GroupBar.
 
-* **Nested GroupBar**: Provides option to add GroupBar control into another GroupBar Control. It can be deployed as a Generic Control Container with maximum flexibility.
+* **Nested GroupBar**: Provides an option to add GroupBar control into another GroupBar control. It can be deployed as a Generic Control Container with maximum flexibility.
 
-* **Visual style** : Provides option to customize the appearance using rich set of available built-in visual styles.
+* **Visual style**: Provides an option to customize the appearance using a rich set of available built-in visual styles.
 
-* **Serialization** - Provides options to save and load the state of the GroupBarItems.
-
+* **Serialization**: Provides options to save and load the state of the GroupBarItems.
 

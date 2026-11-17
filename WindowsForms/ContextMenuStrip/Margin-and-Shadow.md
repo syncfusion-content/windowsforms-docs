@@ -11,7 +11,7 @@ documentation: ug
 
 ## Margin Setting
 
-We can set margin for the WinForms Context Menu Strip to indicates whether a check mark should appear before the text of the menu item by using the [`ShowCheckMargin`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownmenu.showcheckmargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownMenu_ShowCheckMargin) property. Also to show image separately, use the [`ShowImageMargin`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownmenu.showimagemargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownMenu_ShowImageMargin) property.
+We can set margins for the WinForms Context Menu Strip. The [`ShowCheckMargin`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownmenu.showcheckmargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownMenu_ShowCheckMargin) property controls whether a dedicated column is reserved for the check mark shown by checked menu items. To show the images in a separate column, use the [`ShowImageMargin`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownmenu.showimagemargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownMenu_ShowImageMargin) property. For details on toggling the check mark itself, refer to the [Checked State](checkedstate-of-menu-items) page.
 
 
 The below code snippet will explain how to set the margin for WinForms Context Menu Strip control.
@@ -32,11 +32,11 @@ Me.contextMenuStripEx.ShowImageMargin = True
 {% endhighlight %}
 {% endtabs %}
 
-![Margin Setting](MarginShadow_Images/Margin.png)
+![Check margin and image margin enabled on the Context Menu Strip](MarginShadow_Images/Margin.png)
 
 ## Shadow Setting
 
-The shadow option for WinForms Context Menu Strip control refers to shows a three dimensional shadow for the context menu. It can be enabled by using the [`DropShadowEnabled`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdown.dropshadowenabled?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDown_DropShadowEnabled) property.
+The shadow option for the WinForms Context Menu Strip control shows a three-dimensional shadow behind the context menu when it opens. It can be enabled by using the [`DropShadowEnabled`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdown.dropshadowenabled?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDown_DropShadowEnabled) property.
 
 
 The below code snippet will explain how to set shadow for WinForms Context Menu Strip control.
@@ -56,5 +56,5 @@ Me.contextMenuStripEx1.DropShadowEnabled = True
 {% endtabs %}
 
 
-![Shadow Setting](MarginShadow_Images/Shadow.png)
+![Drop shadow enabled on the Context Menu Strip](MarginShadow_Images/Shadow.png)
 

@@ -1,128 +1,110 @@
 ---
 layout: post
-title: BorderLayout in Windows Forms Layout Managers Package| Syncfusion®
-description: BorderLayout allows user to arrange and layout the child controls along the borders similar to framework’s built-in docking support.
+title: BorderLayout in Windows Forms Layout Managers Package | Syncfusion®
+description: BorderLayout allows users to arrange and lay out the child controls along the borders, similar to the .NET framework's built-in docking support.
 platform: windowsforms
-control: Layout Managers Package
+control: BorderLayout
 documentation: ug
 ---
+
 # BorderLayout in Windows Forms Layout Manager
 
-`WinForms Border Layout` is a Layout Manager which allows the user to arrange and layout the Child controls along the borders and at the center, just like the .NET framework's built-in docking support.
+`WinForms Border Layout` is a layout manager which allows the user to arrange and lay out the child controls along the borders and at the center, just like the .NET framework's built-in docking support.
 
-![Layout manager to dock controls at different sides](Overview_images/Overview_img15.jpeg)
+![WinForms BorderLayout arranging the child controls along the borders and at the center of the container](Overview_images/Overview_img15.jpeg)
 
-N> WinForms Border Layout does not arrange the Child components automatically like the other Layout Managers.
+>**NOTE**: WinForms Border Layout does not arrange the child components automatically like the other layout managers.
 
 ## Key features
 
-**Spacing** - Provides option to customize horizontal and vertical gaps between child controls
+* **Spacing**: Provides option to customize the horizontal and vertical gaps between child controls.
 
-**Position** - Provides options to set the direction of child controls such as north, south, east, west or center.
+* **Position**: Provides options to set the direction of child controls such as north, south, east, west, or center.
 
-**Size** - Provides option to  customize the size of the child controls in BorderWinForms Border LayoutLayout.
+* **Size**: Provides option to customize the size of the child controls in WinForms Border Layout.
 
-**Getting started**
+## Getting started
 
-This section describes how to add `WinForms Border Layout` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add the `WinForms Border Layout` control in a Windows Forms application and overviews its basic functionalities.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#borderlayout) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#borderlayout) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the control in any application.
 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
- 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+Find more details about installing the NuGet packages in a Windows Forms application in the following link:
 
-**Creating simple application with WinForms Border Layout**
+[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-You can create the Windows Forms application with WinForms Border Layout control as follows:
+## Creating a simple application with WinForms Border Layout
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually using code](#adding-control-manually-using-code)
+You can create a Windows Forms application with the WinForms Border Layout control as follows:
 
-**Creating the project**
+1. [Creating the project](#creating-the-project)
+2. [Adding the control via designer](#adding-control-via-designer)
+3. [Adding the control manually using code](#adding-control-manually-using-code)
 
-Create a new Windows Forms project in the Visual Studio to display the WinForms Border Layout with basic functionalities.
+## Creating the project
+
+Create a new Windows Forms project in Visual Studio to display the WinForms Border Layout with basic functionalities.
 
 ## Adding control via designer
 
-The WinForms Border Layout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The WinForms Border Layout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly reference will be added automatically:
 
 * Syncfusion.Shared.Base.dll
 
+![WinForms BorderLayout being dragged from the Visual Studio toolbox onto the designer](BorderLayout_images/BorderLayout_img3.png)
 
-![Drag and drop BorderLayout from toolbox](BorderLayout_images/BorderLayout_img3.png)
+To add the form as a container control of the WinForms Border Layout, click `Yes` in the popup form that appears automatically before the WinForms Border Layout gets added.
 
+![Confirmation dialog asking whether the form should be used as the container control of BorderLayout](BorderLayout_images/BorderLayout_img4.png)
 
-To add the form as a Container control of the WinForms Border Layout, click `Yes` in a popup form which appears automatically before WinForms Border Layout gets added.
+### Adding layout components
 
-![Alert to add BorderLayout to form](BorderLayout_images/BorderLayout_img4.png)
+The child controls can be added to the layout by dragging them from the toolbox and dropping them in the designer view.
 
-
-**Adding layout components**
-
-The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
-
-![Adding controls into BorderLayout](BorderLayout_images/BorderLayout_img5.png)
+![Child controls added into the WinForms BorderLayout](BorderLayout_images/BorderLayout_img5.png)
 
 ## Adding control manually using code
 
-To add control manually in C#, follow the given steps:
+To add the control manually in C# or VB, follow the given steps:
 
-**Step 1** - Add the following required assembly references to the project:
+**Step 1**: Add the following required assembly reference to the project:
 
-	* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
-
-{% tabs %}
-
-{% highlight C# %}
-
-using Syncfusion.Windows.Forms.Tools;
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-Imports Syncfusion.Windows.Forms.Tools
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-**Step 3** - Create `WinForms Border Layout` control instance and set `ContainerControl` as form.
+**Step 2**: Include the namespace **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
+{% highlight c# %}
+using Syncfusion.Windows.Forms.Tools;
+{% endhighlight %}
+{% highlight vb %}
+Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight %}
+{% endtabs %}
 
-{% highlight C# %}
+**Step 3**: Create a `WinForms Border Layout` control instance and set `ContainerControl` as the form.
 
+{% tabs %}
+{% highlight c# %}
 BorderLayout borderLayout1 = new BorderLayout();
 
 this.borderLayout1.ContainerControl = this;
-
 {% endhighlight %}
-
-{% highlight VB %}
-
+{% highlight vb %}
 Dim borderLayout1 As BorderLayout = New BorderLayout()
 
 Me.borderLayout1.ContainerControl = Me
-
 {% endhighlight %}
-
 {% endtabs %}
 
-**Adding layout components**
+### Adding layout components
 
-The child controls can be added to the layout by simply adding it to the form, since the form is its container control.
+The child controls can be added to the layout by simply adding them to the form, since the form is its container control.
 
 {% tabs %}
-
-{% highlight C# %}
-
+{% highlight c# %}
 ButtonAdv buttonAdv1 = new ButtonAdv();
 ButtonAdv buttonAdv2 = new ButtonAdv();
 ButtonAdv buttonAdv3 = new ButtonAdv();
@@ -134,82 +116,63 @@ this.buttonAdv3.Text = "buttonAdv3";
 this.Controls.Add(this.buttonAdv1);
 this.Controls.Add(this.buttonAdv2);
 this.Controls.Add(this.buttonAdv3);
-
 {% endhighlight %}
-
-{% highlight VB %}
-
+{% highlight vb %}
 Dim buttonAdv1 As ButtonAdv = New ButtonAdv()
-Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
+Dim buttonAdv2 As ButtonAdv = New ButtonAdv()
 Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
 
 Me.buttonAdv1.Text = "buttonAdv1"
 Me.buttonAdv2.Text = "buttonAdv2"
 Me.buttonAdv3.Text = "buttonAdv3"
 
-Me.Controls.Add(this.buttonAdv1)
-Me.Controls.Add(this.buttonAdv2)
-Me.Controls.Add(this.buttonAdv3)
-
+Me.Controls.Add(Me.buttonAdv1)
+Me.Controls.Add(Me.buttonAdv2)
+Me.Controls.Add(Me.buttonAdv3)
 {% endhighlight %}
-
 {% endtabs %}
 
 ## Configuring WinForms Border Layout
 
-The configuration settings for the WinForms Border Layout have been discussed in this topic.
+The configuration settings for the WinForms Border Layout are described in this topic.
 
 ### Spacing
 
-The horizontal and the vertical gap between the Child controls can be set using the properties given below.
+The horizontal and vertical gaps between the child controls can be set using the following properties.
 
 <table>
 <tr>
-<th>
-WinForms Border Layout properties</th><th>
-Description</th></tr>
+<th>WinForms Border Layout properties</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-HGap</td><td>
-Gets/sets the horizontal spacing between the components.</td></tr>
+<td>HGap</td>
+<td>Gets or sets the horizontal spacing between the components.</td>
+</tr>
 <tr>
-<td>
-VGap</td><td>
-Gets/sets the vertical spacing between the components.</td></tr>
+<td>VGap</td>
+<td>Gets or sets the vertical spacing between the components.</td>
+</tr>
 </table>
 
 {% tabs %}
-
-{% highlight C# %}
-
-
-
+{% highlight c# %}
 this.borderLayout1.HGap = 10;
 
 this.borderLayout1.VGap = 10;
-
-
 {% endhighlight %}
-
-
-{% highlight VB %}
-
+{% highlight vb %}
 Me.borderLayout1.HGap = 10
 
 Me.borderLayout1.VGap = 10
-
 {% endhighlight %}
-
 {% endtabs %}
 
-![Aligning with space between child controls](Overview_images/Overview_img17.jpeg)
+![WinForms BorderLayout showing the horizontal and vertical gaps between the child controls](Overview_images/Overview_img17.jpeg)
 
+## Configuring child controls
 
-## Configuring Child controls
-
-The Child controls can be aligned to various positions (North, South, East, West and Center) using the property given below.
-
-
+The child controls can be aligned to various positions (North, South, East, West, and Center) using the following property.
 
 <table>
 <tr>
@@ -218,48 +181,31 @@ The Child controls can be aligned to various positions (North, South, East, West
 </tr>
 <tr>
 <td>Position on WinForms Border Layout</td>
-<td>Gets/sets the border position for a Child component.</td>
+<td>Gets or sets the border position for a child component.</td>
 </tr>
 </table>
 
-### Child control property description
+>**NOTE**: This property is added as an extended property in the properties window of the child control added to the WinForms Border Layout.
 
-Position on WinForms Border Layout - Gets/sets the border position for a Child component.
- 
-N> This property is added as an extended property in the properties window of the Child control added to the WinForms Border Layout.
-
-  {% tabs %}
-
-  {% highlight C# %}
-
+{% tabs %}
+{% highlight c# %}
 this.borderLayout1.SetPosition(this.btnNorth, Syncfusion.Windows.Forms.Tools.BorderPosition.North);
- 
 {% endhighlight %}
-
-
-{% highlight VB %}
-
+{% highlight vb %}
 Me.borderLayout1.SetPosition(Me.btnNorth, Syncfusion.Windows.Forms.Tools.BorderPosition.North)
-
 {% endhighlight %}
-
 {% endtabs %}
 
-![Aligning child control at different position](BorderLayout_images/BorderLayout_img1.png)
- 
-Setting the position of button1 on WinForms Border Layout to "North"
-{:.caption}
- 
-![Aligning button at north relative to container](BorderLayout_images/BorderLayout_img2.png)
- 
-Layout of all Button Controls using WinForms Border Layout
-{:.caption}
+![WinForms BorderLayout aligning the child control to a different position](BorderLayout_images/BorderLayout_img1.png)
 
-N> WinForms Border Layout allows only one control to be aligned along a particular layout position, unlike the .NET Framework support.
+*Setting the position of button1 on WinForms Border Layout to "North"*
+
+![WinForms BorderLayout aligning a button at the North relative to the container](BorderLayout_images/BorderLayout_img2.png)
+
+*Layout of all button controls using WinForms Border Layout*
+
+>**NOTE**: WinForms Border Layout allows only one control to be aligned along a particular layout position, unlike the .NET Framework support.
 
 {% seealso %}
-
-[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout), [Margin Settings](/windowsforms/layoutmanagers/layout-manager-settings#margin-settings), [Border Layout - Configuring Child Controls](#configuring-child-controls), and
-[Configuring BorderLayout.](#configuring-borderlayout)
-
+[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout), [Margin Settings](/windowsforms/layoutmanagers/layout-manager-settings#margin-settings), [Border Layout - Configuring Child Controls](#configuring-child-controls), and [Configuring BorderLayout](#configuring-borderlayout).
 {% endseealso %}

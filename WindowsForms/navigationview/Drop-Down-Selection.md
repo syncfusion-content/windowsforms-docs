@@ -83,7 +83,7 @@ You can add one or more custom buttons to the NavigationView through designer an
 
 {% highlight C# %}
 
-
+// Required namespace: using System.Drawing;
 
 Syncfusion.Windows.Forms.Tools.Navigation.CustomButton customButton = new Syncfusion.Windows.Forms.Tools.Navigation.CustomButton();
 
@@ -101,7 +101,7 @@ navigationView4.Controls.Add(customButton);
 
 {% highlight VB %}
 
-
+' Required namespace: Imports System.Drawing
 
 Dim customButton As Syncfusion.Windows.Forms.Tools.Navigation.CustomButton = New Syncfusion.Windows.Forms.Tools.Navigation.CustomButton()
 

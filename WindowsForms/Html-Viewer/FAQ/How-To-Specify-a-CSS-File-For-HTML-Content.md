@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Specify a CSS File For HTML Content | Syncfusion®
-description: Learn how to Specify a CSS File For HTML Content in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+description: Learn how to specifying a CSS file for the HTML content rendered by the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
@@ -23,7 +23,7 @@ The WinForms HTML Viewer control supports formatting the HTML document with styl
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -41,7 +41,7 @@ this.htmluiControl1.LoadCSS(@"C:\MyProjects\LoadCSS\style.css");
 
 '  Loads styles from the specified CSS document from a System.IO.Stream and refresh the current
 
-' document using the styles 
+' document using the styles 
 
 Me.HtmluiControl1.LoadCSS("C:\MyProjects\LoadCSS\style.css")
 
