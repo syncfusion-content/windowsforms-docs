@@ -11,7 +11,7 @@ documentation: ug
 
 Syncfusion<sup>®</sup> publishes its Visual Studio extension on the Visual Studio Marketplace at the link below. You can install it directly from within Visual Studio or download it from the Marketplace.
 
-[Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WindowsVSExtensions)
+[Visual Studio 2026](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WindowsVSExtensions)
 
 [Visual Studio 2019 or lower](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Windows-Extensions) 
 
@@ -57,7 +57,7 @@ The steps below illustrate how to download and install the Syncfusion Windows ex
 
 1. Download the Syncfusion WinForms Extensions from the below Visual Studio Marketplace link.
 
-    [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WindowsVSExtensions)
+    [Visual Studio 2026](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WindowsVSExtensions)
 
     [Visual Studio 2019 or lower](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Windows-Extensions)
 

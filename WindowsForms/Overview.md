@@ -7,7 +7,8 @@ control: Introduction
 documentation: ug
 ---
 
-> Starting with the 2027 Volume 1 release, support for .NET 8.0 and .NET 9.0 will be discontinued for WinForms, WPF, WinUI, and Document Processing Libraries. We recommend upgrading to .NET 10.0 or a later version.
+> Beginning with 2027 Volume 1, WinForms, WPF, WinUI, and Document Processing Libraries will no longer support .NET Framework 4.6.2, .NET 8, and .NET 9. To continue receiving updates and support, we recommend upgrading to .NET Framework 4.7 or later or .NET 10 or later.
+ 
 
 # About Syncfusion® Windows Forms Control
 
@@ -352,3 +353,4 @@ Similar to the [Knowledge Base](https://support.syncfusion.com/kb/desktop/catego
 If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://internalsupport.bolddesk.com/agent/tickets/create "Create a new support ticket").
 
 Don't see what you need? Please request it in our [Feedback portal](https://www.syncfusion.com/feedback/winforms "Submit feedback about Windows Forms controls").
+
