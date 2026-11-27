@@ -14,7 +14,7 @@ This section lists needed assembly or NuGet references to use any control in the
 You can refer to the [Syncfusion<sup>®</sup> controls section](https://help.syncfusion.com/windowsforms/add-syncfusion-controls) to learn how to add Syncfusion<sup>®</sup> control.
 
 N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion<sup>®</sup> Windows Forms controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.
-
+N> Starting with version 34.2 (2026 Volume 2), `Syncfusion.Telemetry.dll` has been included as a reference for most of the Syncfusion WPF controls.
 ## AutoComplete
 
 <table>

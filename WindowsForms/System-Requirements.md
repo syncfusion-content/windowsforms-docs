@@ -31,8 +31,8 @@ This section describes the system requirements to use Syncfusion<sup>®</sup> Wi
 
 ## Development Environment
 
-* Microsoft Visual Studio 2015/2017/2019/2022
+* Microsoft Visual Studio 2015/2017/2019/2022/2026
 * .NET Framework 4.6.2
 * Lower Syncfusion<sup>®</sup> .NET frameworks can be used in applications because they are compatible with .NET 4.7, .NET 4.7.1, .NET 4.7.2, and .NET 4.8. For example, in the application, the Syncfusion<sup>®</sup> 4.6.2 .NET framework assembly can be referred to as 4.7 or higher target versions.
-* .NET 8.0, .NET 9.0, .NET 10.0.
+* .NET 8.0, .NET 9.0, .NET 10.0, .NET 11.0.
 

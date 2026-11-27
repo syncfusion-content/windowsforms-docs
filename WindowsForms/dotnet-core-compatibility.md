@@ -23,7 +23,7 @@ N> All Syncfusion<sup>®</sup> Windows Forms controls support .NET Core Framewor
 
 <img src="NETcore_images/NETcore_configureproject.png" alt="NETcore showing configure the project" width="100%" Height="Auto"/>
 
-**Step 3**: In the Additional information window, select .NET 6.0 (Long-term support) for the Framework setting, and then click **Create**.
+**Step 3**: In the Additional information window, select .NET 11.0 (Long-term support) for the Framework setting, and then click **Create**.
 
 <img src="NETcore_images/NETcore_selectedversion.png" alt="NETcore showing the Framework setting — selected version" width="100%" Height="Auto"/>
 

@@ -28,7 +28,23 @@ Syncfusion<sup>®</sup> Version </th>
 .NET 7.0</th><th>
 .NET 8.0</th><th>
 .NET 9.0</th><th>
-.NET 10.0</th></tr>
+.NET 10.0</th><th>
+.NET 11.0</th></tr>
+
+<tr>
+<td>
+From 35.2 (2026 Vol3 SP)</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+Yes</td><td>
+No</td><td>
+No</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td></tr>
+
 
 <tr>
 <td>
